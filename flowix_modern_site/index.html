@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Flowix Solutions – KI‑Automatisierung, die läuft</title>
+<meta name="description" content="Flowix Solutions automatisiert Ihre Abläufe – mehr Zeit, weniger Aufwand, 100 % Flow. KI‑gestützte Prozessautomatisierung für Vertrieb, Backoffice, Reporting und Support.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css?v=3">
+</head>
+<body>
+  <div class="container">
+    <header aria-label="Hauptnavigation">
+      <div class="logo">
+        <img alt="Flowix Solutions Logo" src="./flowix-logo.png"/>
+        <span>Flowix Solutions</span>
+      </div>
+      <nav>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#prozess">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge">KI-Automatisierung</span>
+      <h1>KI‑Automatisierung, die denkt, bevor du klickst.</h1>
+      <p class="lead">Flowix Solutions automatisiert deine Abläufe – mehr Zeit, weniger Aufwand, 100&nbsp;% Flow.</p>
+      <div style="margin-top:18px">
+        <a class="btn primary" href="#kontakt">Kostenloses Erstgespräch sichern</a>
+        <a class="btn ghost" href="#leistungen">Leistungen ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="problem">
+    <div class="container">
+      <div class="grid">
+        <div class="card span6">
+          <div class="kicker">Das Problem</div>
+          <h2 id="problem">Zu viele Aufgaben. Zu wenig Zeit.</h2>
+          <p>Meetings, Tools, Copy‑Paste – und die Woche ist vorbei. Prozesse bremsen Wachstum, statt es zu beschleunigen.</p>
+        </div>
+        <div class="card span6">
+          <div class="kicker">Unsere Lösung</div>
+          <h2>Von Chaos zu Flow.</h2>
+          <p>Flowix verbindet deine Systeme, automatisiert Workflows und sorgt für <strong>messbare Effizienzsteigerung</strong>. Keine Routine, kein Leerlauf – nur klar strukturierte Prozesse, die von selbst laufen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="leistungen" aria-labelledby="usecases">
+    <div class="container">
+      <h2 id="usecases" style="margin-bottom:16px">Anwendungsfälle</h2>
+      <div class="grid">
+        <div class="card span3"><div class="icon">⚙️</div><h3>Vertrieb</h3><p>Leads qualifizieren, Termine automatisch buchen.</p></div>
+        <div class="card span3"><div class="icon">📁</div><h3>Backoffice</h3><p>Rechnungen, Freigaben und Dokumente automatisiert verarbeiten.</p></div>
+        <div class="card span3"><div class="icon">📊</div><h3>Reporting</h3><p>Dashboards aktualisieren sich selbst – jederzeit abrufbar.</p></div>
+        <div class="card span3"><div class="icon">💬</div><h3>Support</h3><p>Tickets priorisieren, Antworten vorschlagen, Prozesse optimieren.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prozess" aria-labelledby="prozess-h2">
+    <div class="container">
+      <h2 id="prozess-h2" style="margin-bottom:16px">So funktioniert es</h2>
+      <div class="grid">
+        <div class="card span4"><h3>1) Analyse</h3><p>Wir identifizieren Automatisierungspotenziale.</p></div>
+        <div class="card span4"><h3>2) Umsetzung</h3><p><strong>KI‑gestützte Prozessautomatisierung</strong>, abgestimmt auf dein Unternehmen.</p></div>
+        <div class="card span4"><h3>3) Betrieb</h3><p>Monitoring, Optimierung und laufende Weiterentwicklung.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact-section">
+    <div class="container">
+      <h2>Kontaktiere uns</h2>
+      <p class="lead">Hast du Fragen oder möchtest du ein kostenloses Erstgespräch vereinbaren?<br>Schreib uns direkt oder nutze das Formular – wir melden uns innerhalb von 24 Stunden.</p>
+
+      <a class="btn ghost" href="mailto:info@flowixsolutions.de">📩 Oder direkt per E‑Mail schreiben</a>
+
+      <div id="form-msg-ok" class="success">Vielen Dank! Deine Nachricht wurde gesendet.</div>
+      <div id="form-msg-err" class="error">Fehler: Bitte prüfe den Access Key oder fülle alle Felder korrekt aus.</div>
+
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form" novalidate>
+        <input type="hidden" name="access_key" id="w3key" value="78b364b6-1245-4f78-a761-f2df53b3770c">
+        <input type="hidden" name="replyto" value="info@flowixsolutions.de">
+        <input type="hidden" name="from_name" value="Flowix Website">
+        <input type="hidden" name="subject" value="Neue Anfrage über flowixsolutions.de">
+        <input type="text" name="honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="grid">
+          <div class="span6"><input type="text" name="name" placeholder="Dein Name" required></div>
+          <div class="span6"><input type="email" name="email" placeholder="Deine E‑Mail" required></div>
+          <div class="span12"><input type="text" name="company" placeholder="Unternehmen (optional)"></div>
+          <div class="span12"><textarea name="message" rows="5" placeholder="Nachricht..." required></textarea></div>
+        </div>
+
+        <button type="submit" class="btn primary">Nachricht senden</button>
+        <div class="small-note">Hinweis: Das Formular nutzt Web3Forms. Trage deinen Access‑Key (UUID) im Code ein.</div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+      <span>© 2025 Flowix Solutions · <a class="link" href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></span>
+      <span><a class="link" href="impressum.html">Impressum</a> · <a class="link" href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const key = document.getElementById('w3key').value.trim();
+      const uuidRegex = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+      if (!uuidRegex.test(key)) {
+        const warn = document.createElement('div');
+        warn.className = 'error';
+        warn.style.display = 'block';
+        warn.style.marginTop = '12px';
+        warn.textContent = 'Dein Web3Forms Access Key fehlt oder ist ungültig. Ersetze DEIN_WEB3FORMS_KEY_HIER durch deinen echten Key (UUID).';
+        document.getElementById('contact-form').prepend(warn);
+      }
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', function(e){
+        const email = form.querySelector('input[name="email"]').value;
+        if (!email || !email.includes('@')) {
+          e.preventDefault();
+          document.getElementById('form-msg-err').style.display = 'block';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
