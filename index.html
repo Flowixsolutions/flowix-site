@@ -3,11 +3,12 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Flowix Solutions – Prozess- & Workflow-Automation für KMU</title>
-<meta name="description" content="Flowix Solutions automatisiert wiederkehrende Abläufe in KMU: Systeme verbinden, Workflows umsetzen, manuelle Arbeit reduzieren – sauber dokumentiert, wartbar und sicher.">
+<title>Flowix Solutions – Automation Engineering für KMU</title>
+<meta name="description" content="Flowix Solutions automatisiert wiederkehrende Abläufe in KMU: Systeme verbinden, Workflows umsetzen, manuelle Arbeit reduzieren – dokumentiert, wartbar und sicher.">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <div class="container">
     <header aria-label="Hauptnavigation">
@@ -16,205 +17,232 @@
         <span>Flowix Solutions</span>
       </div>
       <nav>
-        <a href="#leistungen">Anwendungsfälle</a>
-        <a href="#ueber-uns">Über uns</a>
+        <a href="#anwendungsfaelle">Anwendungsfälle</a>
+        <a href="#prozess">Vorgehen</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
     </header>
   </div>
 
+  <!-- HERO -->
   <section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-content">
-      <div class="kicker">Automation Engineering für KMU</div>
-      <h1>Workflows, die zuverlässig laufen – statt manuellem Chaos.</h1>
-      <p class="lead">
-        Flowix Solutions automatisiert wiederkehrende Abläufe über eure Systeme hinweg.
-        KI dort, wo sie sinnvoll ist. Dokumentiert, wartbar und sicher.
-      </p>
-
-      <div class="hero-cta">
-        <a class="btn primary" href="#kontakt" aria-label="Projekt anfragen">Projekt anfragen</a>
-        <a class="btn ghost" href="#case">Beispiel ansehen</a>
-      </div>
-
-      <div class="proof-bar" role="list" aria-label="Kurzvorteile">
-        <div class="proof-item" role="listitem">
-          <div class="proof-title">Lieferzeit</div>
-          <div class="proof-text">typisch 7–21 Tage</div>
-        </div>
-        <div class="proof-item" role="listitem">
-          <div class="proof-title">Qualität</div>
-          <div class="proof-text">Doku & Übergabe inklusive</div>
-        </div>
-        <div class="proof-item" role="listitem">
-          <div class="proof-title">Betrieb</div>
-          <div class="proof-text">Monitoring optional</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-panel" aria-label="Beispiel-Workflow">
-      <div class="panel-title">Beispiel-Workflow</div>
-      <div class="panel-flow">
-        <span class="chip">Lead</span>
-        <span class="arrow">→</span>
-        <span class="chip">Qualifizierung</span>
-        <span class="arrow">→</span>
-        <span class="chip">CRM</span>
-        <span class="arrow">→</span>
-        <span class="chip">Termin</span>
-        <span class="arrow">→</span>
-        <span class="chip">Follow-up</span>
-      </div>
-      <div class="panel-meta">
-        Robust, nachvollziehbar, mit Logging und Fehlerhandling.
-      </div>
-    </div>
-  </div>
-</section>
-  <section id="case" aria-labelledby="case-heading">
-  <div class="container">
-    <div class="case">
-      <div class="case-left">
-        <div class="kicker">Mini Case</div>
-        <h2 id="case-heading">Lead-to-CRM in unter 60 Minuten umgesetzt.</h2>
-        <p class="lead" style="max-width: 720px;">
-          Eingehende Leads aus Formular und E-Mail werden automatisch erfasst, qualifiziert,
-          ins CRM übertragen und dem richtigen Owner zugewiesen – inklusive Terminlogik und Follow-ups.
+    <div class="container hero-grid">
+      <div class="hero-left">
+        <div class="kicker">Automation Engineering</div>
+        <h1>Workflows, die laufen.</h1>
+        <p class="lead">
+          Wir automatisieren wiederkehrende Abläufe in KMU – dokumentiert, wartbar und sicher.
         </p>
 
-        <div class="case-metrics">
-          <div class="metric">
-            <div class="metric-value">-30–60 Min/Tag</div>
-            <div class="metric-label">manuelle Arbeit</div>
+        <div class="hero-cta">
+          <a class="btn primary" href="#kontakt" aria-label="Projekt anfragen">Projekt anfragen</a>
+          <a class="btn ghost" href="#case" aria-label="Beispiel ansehen">Beispiel ansehen</a>
+        </div>
+
+        <div class="proof-bar" aria-label="Kurzvorteile">
+          <div class="proof-item">
+            <div class="proof-title">Lieferzeit</div>
+            <div class="proof-text">typisch 7–21 Tage</div>
           </div>
-          <div class="metric">
-            <div class="metric-value">weniger Leaks</div>
-            <div class="metric-label">durch Routing</div>
+          <div class="proof-item">
+            <div class="proof-title">Qualität</div>
+            <div class="proof-text">Doku & Übergabe inkl.</div>
           </div>
-          <div class="metric">
-            <div class="metric-value">schnellere Response</div>
-            <div class="metric-label">durch Automatik</div>
+          <div class="proof-item">
+            <div class="proof-title">Betrieb</div>
+            <div class="proof-text">Monitoring optional</div>
           </div>
         </div>
 
-        <div style="margin-top:16px">
-          <a class="btn ghost" href="#leistungen">Weitere Anwendungsfälle</a>
-        </div>
-      </div>
-
-      <div class="case-right">
-        <div class="case-box">
-          <div class="case-box-title">Output</div>
-          <ul class="case-list">
-            <li>CRM-Record + Owner + Status</li>
-            <li>Automatische Aufgaben & Erinnerungen</li>
-            <li>Benachrichtigung an Team/Inbox</li>
-            <li>Audit-Trail für Nachvollziehbarkeit</li>
-          </ul>
+        <div class="micro">
+          Keine Verkaufs-Show · Erst Diagnose, dann Lösung · Antwort i. d. R. innerhalb von 24–48 Stunden
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
+      <!-- Workflow Canvas -->
+      <div class="hero-right" aria-label="Workflow Canvas">
+        <div class="canvas">
+          <div class="canvas-top">
+            <div class="canvas-title">Workflow Canvas</div>
+            <div class="canvas-sub">Beispiel: Lead → CRM → Termin → Follow-up</div>
+          </div>
 
-      <p class="lead" style="margin-top:14px;font-size:0.98rem;opacity:.9">
-        Keine Verkaufs-Show · Erst Analyse, dann Empfehlung · Antwort i. d. R. innerhalb von 24–48 Stunden
-      </p>
+          <div class="nodes">
+            <div class="node">
+              <div class="node-title">Lead</div>
+              <div class="node-sub">Form / E-Mail</div>
+            </div>
+            <div class="node arrow">→</div>
+            <div class="node">
+              <div class="node-title">Qualifizierung</div>
+              <div class="node-sub">Regeln + KI</div>
+            </div>
+            <div class="node arrow">→</div>
+            <div class="node">
+              <div class="node-title">CRM</div>
+              <div class="node-sub">Owner + Status</div>
+            </div>
+            <div class="node arrow">→</div>
+            <div class="node">
+              <div class="node-title">Termin</div>
+              <div class="node-sub">Kalender</div>
+            </div>
+            <div class="node arrow">→</div>
+            <div class="node">
+              <div class="node-title">Follow-up</div>
+              <div class="node-sub">Tasks + Reminder</div>
+            </div>
+          </div>
+
+          <div class="canvas-footer">
+            <div class="pill">Logging</div>
+            <div class="pill">Fehlerhandling</div>
+            <div class="pill">Audit Trail</div>
+            <div class="pill">Dokumentation</div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section aria-labelledby="problem-loesung">
+  <!-- MINI CASE (kurz, visuell) -->
+  <section id="case" aria-labelledby="case-heading">
     <div class="container">
-      <div class="grid">
-        <div class="card span6">
-          <div class="kicker">Das Problem</div>
-          <h2 id="problem-loesung">Manuelle Übergaben skalieren nicht.</h2>
-          <p>
-            Copy-Paste zwischen Tools, E-Mail-Chaos, Medienbrüche und fehlende Transparenz kosten täglich Zeit.
-            Das bremst Teams aus, erzeugt Fehler und macht Wachstum unnötig teuer.
+      <div class="case">
+        <div class="case-head">
+          <div class="kicker">Mini Case</div>
+          <h2 id="case-heading">Lead-to-CRM ohne manuelle Übergaben.</h2>
+          <p class="lead case-lead">
+            Eingehende Leads werden erfasst, qualifiziert, ins CRM geschrieben und an den richtigen Owner geroutet – inklusive Termin- und Follow-up-Logik.
           </p>
         </div>
-        <div class="card span6">
-          <div class="kicker">Unsere Lösung</div>
-          <h2>Durchgängige Workflows statt Insellösungen.</h2>
-          <p>
-            Wir verbinden bestehende Systeme zu klaren End-to-End-Prozessen: Trigger, Datenflüsse, Prüfungen und
-            Benachrichtigungen laufen automatisiert – <strong>dokumentiert, wartbar und sicher</strong>.
-          </p>
+
+        <div class="case-grid">
+          <div class="case-badges">
+            <div class="badge">
+              <div class="badge-top">-30–60 Min/Tag</div>
+              <div class="badge-sub">manuelle Arbeit</div>
+            </div>
+            <div class="badge">
+              <div class="badge-top">weniger Leaks</div>
+              <div class="badge-sub">durch Routing</div>
+            </div>
+            <div class="badge">
+              <div class="badge-top">schnellere Response</div>
+              <div class="badge-sub">durch Automatik</div>
+            </div>
+          </div>
+
+          <div class="case-output">
+            <div class="output-title">Output</div>
+            <ul class="output-list">
+              <li>CRM-Record + Owner + Status</li>
+              <li>Automatische Aufgaben & Erinnerungen</li>
+              <li>Benachrichtigung an Team/Inbox</li>
+              <li>Nachvollziehbarkeit über Audit Trail</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="leistungen">
+  <!-- Anwendungsfälle (kurz, kein Roman) -->
+  <section id="anwendungsfaelle">
     <div class="container">
       <h2 style="margin-bottom:16px">Typische Anwendungsfälle</h2>
-
       <div class="grid">
         <div class="card span4">
           <h3>Vertrieb</h3>
-          <p>
-            Leads aus Formular/E-Mail werden automatisch erfasst, qualifiziert und ins CRM überführt –
-            inklusive Routing, Follow-ups und Terminvorschlägen.
-          </p>
+          <p>Lead-Routing, CRM-Updates, Terminlogik, Follow-ups.</p>
         </div>
-
         <div class="card span4">
           <h3>Backoffice</h3>
-          <p>
-            Eingangsrechnungen, Freigaben und Dokumente werden strukturiert verarbeitet:
-            Ablage, Benennung, Freigabe-Workflow und Erinnerungen ohne manuelles Nachhalten.
-          </p>
+          <p>Dokumente, Freigaben, Ablage, Erinnerungen.</p>
         </div>
-
         <div class="card span4">
-          <h3>Reporting</h3>
-          <p>
-            Daten werden automatisch zusammengeführt und als Report bereitgestellt –
-            wiederkehrend, nachvollziehbar und ohne „Excel-Pflege“.
-          </p>
+          <h3>Support</h3>
+          <p>Tickets, Priorisierung, Antworten, Wissensfluss.</p>
         </div>
       </div>
 
       <div class="grid" style="margin-top:18px">
-        <div class="card span4">
-          <h3>Support</h3>
-          <p>
-            Support-Anfragen werden kategorisiert, priorisiert und als Ticket angelegt –
-            mit Vorschlägen für Antworten, klaren Zuständigkeiten und sauberer Dokumentation.
-          </p>
-        </div>
-        <div class="card span8">
-          <h3>Systeme, die wir typischerweise verbinden</h3>
-          <p>
-            E-Mail, Kalender, CRM, Ticketing, Dateien/Cloud-Speicher, interne Tools und Schnittstellen.
-            Bestehende Systemlandschaft bleibt erhalten – wir automatisieren darüber hinweg.
+        <div class="card span12">
+          <div class="kicker">Systeme</div>
+          <p style="margin:0;color:var(--muted)">
+            E-Mail · Kalender · CRM · Ticketing · Dateiablage · interne Tools · Schnittstellen
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <section aria-labelledby="prozess">
+  <!-- Vorgehen -->
+  <section id="prozess" aria-labelledby="prozess-heading">
     <div class="container">
-      <h2 id="prozess" style="margin-bottom:16px">So läuft ein Projekt ab</h2>
+      <h2 id="prozess-heading" style="margin-bottom:16px">Vorgehen</h2>
       <div class="grid">
         <div class="card span4">
-          <h3>1) Analyse</h3>
-          <p>
-            Prozess- und Systemanalyse, Engpässe, Quick Wins, Zieldefinition.
-          </p>
+          <div class="kicker">1</div>
+          <h3>Diagnose</h3>
+          <p>Prozess + Systeme + Engpässe. Ergebnis: klare Empfehlung.</p>
         </div>
         <div class="card span4">
-          <h3>2) Umsetzung</h3>
-          <p>
-            Workflow-Design, Implementierung, Tests und sauberes Rollout – passend zur Systemlandschaft.
-          </p>
+          <div class="kicker">2</div>
+          <h3>Umsetzung</h3>
+          <p>Workflow-Design, Implementierung, Tests, Rollout.</p>
         </div>
         <div class="card span4">
-          <h3>3) Betrieb</h3>
-          <p>
+          <div class="kicker">3</div>
+          <h3>Betrieb</h3>
+          <p>Monitoring, Optimierung, Dokumentation, Übergabe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Kontakt -->
+  <section id="kontakt" class="contact-section">
+    <div class="container">
+      <h2>Projekt anfragen</h2>
+      <p class="lead">
+        Kurz beschreiben: Prozess, Systeme, Ziel. Wir melden uns mit Rückfragen und einem Vorschlag fürs Erstgespräch.
+        Unverbindlich, kein Vertragsschluss über die Website.
+      </p>
+
+      <div style="margin-top:14px;margin-bottom:10px">
+        <a class="btn ghost" href="mailto:info@flowixsolutions.de?subject=Projektanfrage%20Flowix%20Solutions&body=Name%3A%20%0AFirma%3A%20%0A%0AProzess%3A%20%0ASysteme%3A%20%0AZiel%3A%20%0A">
+          Direkt per E-Mail anfragen
+        </a>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="DEIN_WEB3FORMS_KEY_HIER">
+        <input type="hidden" name="replyto" value="info@flowixsolutions.de">
+        <input type="hidden" name="from_name" value="Flowix Website">
+        <input type="hidden" name="redirect" value="https://flowixsolutions.de/danke.html">
+
+        <div class="grid">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="E-Mail" required>
+        </div>
+        <input type="text" name="company" placeholder="Unternehmen (optional)">
+        <textarea name="message" rows="6" placeholder="Kurzbeschreibung: Prozess, Systeme, Ziel" required></textarea>
+
+        <button type="submit" class="btn primary">Anfrage senden</button>
+
+        <p class="form-note">
+          Mit dem Absenden erklärst du dich mit der Verarbeitung deiner Angaben gemäß Datenschutzerklärung einverstanden.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+      <span>© 2026 Can Yenigün – Flowix Solutions · <a class="link" href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></span>
+      <span><a class="link" href="impressum.html">Impressum</a> · <a class="link" href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </footer>
+</body>
+</html>
