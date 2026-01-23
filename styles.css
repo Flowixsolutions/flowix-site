@@ -83,6 +83,8 @@ p.lead{
 .grid{display:grid;gap:18px;grid-template-columns:repeat(12,1fr)}
 .span12{grid-column:span 12}
 .span4{grid-column:span 4}
+.span8 {grid-column: span 8;}
+
 
 /* Cards */
 .card{
