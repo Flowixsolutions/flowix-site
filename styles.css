@@ -146,6 +146,29 @@ header{display:flex;align-items:center;justify-content:space-between;padding:12p
 
 /* ---------- Typography ---------- */
 section{padding:64px 0}
+/* --- SECTION DIVIDER (Tech-Style) --- */
+section{
+  position: relative;
+}
+
+section::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:100%;
+  max-width:1120px;
+  height:1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(30,167,255,.35),
+    transparent
+  );
+  opacity:.35;
+}
+
 .kicker{
   color:#74C6FF;
   letter-spacing:.08em;
