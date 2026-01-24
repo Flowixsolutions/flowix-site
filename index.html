@@ -16,12 +16,29 @@
         <img alt="Flowix Solutions Logo" src="./flowix-logo.png"/>
         <span>Flowix Solutions</span>
       </div>
-      <nav>
+      <nav class="topnav">
+        <a href="#features">Features</a>
         <a href="#anwendungsfaelle">Anwendungsfälle</a>
-        <a href="#prozess">Vorgehen</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#vorgehen">Vorgehen</a>
+        <a href="#sicherheit">Sicherheit</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-cta" href="#kontakt">Projekt anfragen</a>
       </nav>
     </header>
+  </div>
+
+  <!-- Sticky Subnav -->
+  <div class="subnav" role="navigation" aria-label="Seitennavigation">
+    <div class="container subnav-inner">
+      <div class="subnav-links">
+        <a href="#features">Überblick</a>
+        <a href="#anwendungsfaelle">Anwendungsfälle</a>
+        <a href="#vorgehen">Vorgehen</a>
+        <a href="#sicherheit">Sicherheit</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="btn primary subnav-cta" href="#kontakt">Projekt anfragen</a>
+    </div>
   </div>
 
   <!-- HERO -->
@@ -29,177 +46,325 @@
     <div class="container hero-grid">
       <div class="hero-left">
         <div class="kicker">Automation Engineering</div>
-        <h1>Workflows, die laufen.</h1>
+        <h1>Automatisierung, die im Betrieb stabil bleibt.</h1>
         <p class="lead">
-         Manuelle Prozesse sind ein Skalierungsfehler.
-Wir ersetzen sie durch robuste, dokumentierte Workflows
-über eure bestehenden Systeme hinweg.
-
+          Wir bauen robuste Workflows über eure bestehenden Systeme hinweg – mit sauberer Dokumentation,
+          Logging und Übergabe. Kein Chaos, keine Blackbox.
         </p>
 
         <div class="hero-cta">
-          <a class="btn primary" href="#kontakt" aria-label="Projekt anfragen">Projekt anfragen</a>
-          <a class="btn ghost" href="#case" aria-label="Beispiel ansehen">Beispiel ansehen</a>
+          <a class="btn primary" href="#kontakt">Projekt anfragen</a>
+          <a class="btn ghost" href="#features">Features ansehen</a>
         </div>
 
-        <div class="proof-bar" aria-label="Kurzvorteile">
-          <div class="proof-item">
-            <div class="proof-title">Lieferzeit</div>
-            <div class="proof-text">typisch 7–21 Tage</div>
-          </div>
-          <div class="proof-item">
-            <div class="proof-title">Qualität</div>
-            <div class="proof-text">Doku & Übergabe inkl.</div>
-          </div>
-          <div class="proof-item">
-            <div class="proof-title">Betrieb</div>
-            <div class="proof-text">Monitoring optional</div>
-          </div>
-        </div>
-
-        <div class="micro">
-          Antwort i. d. R. innerhalb von 12-24 Stunden
+        <div class="proof-row" aria-label="Kurzvorteile">
+          <div class="proof-chip"><span class="dot"></span> Lieferzeit: typisch 7–21 Tage</div>
+          <div class="proof-chip"><span class="dot"></span> Doku & Übergabe inklusive</div>
+          <div class="proof-chip"><span class="dot"></span> Monitoring optional</div>
         </div>
       </div>
 
-      <!-- Workflow Canvas -->
-      <div class="hero-right" aria-label="Workflow Canvas">
-        <div class="canvas">
-          <div class="canvas-top">
-            <div class="canvas-title">Workflow Canvas</div>
-            <div class="canvas-sub">Beispiel: Lead → CRM → Termin → Follow-up</div>
+      <!-- Hero UI Mock -->
+      <div class="hero-right" aria-label="UI Mock">
+        <div class="ui">
+          <div class="ui-top">
+            <div class="ui-title">Workflow Dashboard</div>
+            <div class="ui-pill">LIVE</div>
           </div>
 
-          <div class="nodes">
-            <div class="node">
-              <div class="node-title">Lead</div>
-              <div class="node-sub">Form / E-Mail</div>
+          <div class="ui-kpis">
+            <div class="kpi">
+              <div class="kpi-label">Automatisierte Schritte</div>
+              <div class="kpi-value">128 / Tag</div>
             </div>
-            <div class="node arrow">→</div>
-            <div class="node">
-              <div class="node-title">Qualifizierung</div>
-              <div class="node-sub">Regeln + KI</div>
+            <div class="kpi">
+              <div class="kpi-label">Fehlerquote</div>
+              <div class="kpi-value">0.3%</div>
             </div>
-            <div class="node arrow">→</div>
-            <div class="node">
-              <div class="node-title">CRM</div>
-              <div class="node-sub">Owner + Status</div>
-            </div>
-            <div class="node arrow">→</div>
-            <div class="node">
-              <div class="node-title">Termin</div>
-              <div class="node-sub">Kalender</div>
-            </div>
-            <div class="node arrow">→</div>
-            <div class="node">
-              <div class="node-title">Follow-up</div>
-              <div class="node-sub">Tasks + Reminder</div>
+            <div class="kpi">
+              <div class="kpi-label">Zeitersparnis</div>
+              <div class="kpi-value">~6.2h/W</div>
             </div>
           </div>
 
-          <div class="canvas-footer">
-            <div class="pill">Logging</div>
-            <div class="pill">Fehlerhandling</div>
-            <div class="pill">Audit Trail</div>
-            <div class="pill">Dokumentation</div>
+          <div class="ui-flow">
+            <div class="flow-row">
+              <span class="flow-tag">Lead</span><span class="flow-arrow">→</span>
+              <span class="flow-tag">Qualifizierung</span><span class="flow-arrow">→</span>
+              <span class="flow-tag">CRM</span><span class="flow-arrow">→</span>
+              <span class="flow-tag">Termin</span><span class="flow-arrow">→</span>
+              <span class="flow-tag">Follow-up</span>
+            </div>
+            <div class="ui-meta">Logging · Fehlerhandling · Audit Trail · Dokumentation</div>
+          </div>
+
+          <div class="ui-list">
+            <div class="ui-item">
+              <span class="ui-bullet ok"></span>
+              <div>
+                <div class="ui-item-title">Lead verarbeitet</div>
+                <div class="ui-item-sub">CRM-Record + Owner gesetzt</div>
+              </div>
+              <div class="ui-time">vor 2 Min</div>
+            </div>
+            <div class="ui-item">
+              <span class="ui-bullet ok"></span>
+              <div>
+                <div class="ui-item-title">Ticket priorisiert</div>
+                <div class="ui-item-sub">Kategorie: „Urgent“</div>
+              </div>
+              <div class="ui-time">vor 7 Min</div>
+            </div>
+            <div class="ui-item">
+              <span class="ui-bullet warn"></span>
+              <div>
+                <div class="ui-item-title">Fallback aktiv</div>
+                <div class="ui-item-sub">Schnittstelle langsam, Retry geplant</div>
+              </div>
+              <div class="ui-time">vor 12 Min</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MINI CASE (kurz, visuell) -->
-  <section id="case" aria-labelledby="case-heading">
+  <!-- OVERVIEW / FEATURES -->
+  <section id="features">
     <div class="container">
-      <div class="case">
-        <div class="case-head">
-          <div class="kicker">Mini Case</div>
-          <h2 id="case-heading">Lead-to-CRM ohne manuelle Übergaben.</h2>
-          <p class="lead case-lead">
-            Eingehende Leads werden erfasst, qualifiziert, ins CRM geschrieben und an den richtigen Owner geroutet – inklusive Termin- und Follow-up-Logik.
-          </p>
-        </div>
+      <div class="section-head">
+        <div class="kicker">Überblick</div>
+        <h2>Features, die Vertrauen schaffen.</h2>
+        <p class="lead compact">
+          Nicht „Automatisierung um jeden Preis“, sondern Engineering: nachvollziehbar, wartbar, sicher.
+        </p>
+      </div>
 
-        <div class="case-grid">
-          <div class="case-badges">
-            <div class="badge">
-              <div class="badge-top">-30–60 Min/Tag</div>
-              <div class="badge-sub">manuelle Arbeit</div>
-            </div>
-            <div class="badge">
-              <div class="badge-top">weniger Leaks</div>
-              <div class="badge-sub">durch Routing</div>
-            </div>
-            <div class="badge">
-              <div class="badge-top">schnellere Antwort</div>
-              <div class="badge-sub">durch Automatik</div>
-            </div>
+      <div class="grid feature-grid">
+        <div class="card span4 feature">
+          <div class="feature-title">Systeme verbinden</div>
+          <div class="feature-sub">CRM, E-Mail, Ticketing, Dateien, interne Tools.</div>
+        </div>
+        <div class="card span4 feature">
+          <div class="feature-title">Robuste Abläufe</div>
+          <div class="feature-sub">Validierung, Retries, Fallbacks, klare Zuständigkeiten.</div>
+        </div>
+        <div class="card span4 feature">
+          <div class="feature-title">Transparenz</div>
+          <div class="feature-sub">Logging, Audit Trail, Status- & Fehlerübersicht.</div>
+        </div>
+      </div>
+
+      <!-- Feature Tour -->
+      <div class="tour">
+        <div class="tour-left">
+          <div class="kicker">Feature Tour</div>
+          <h3>Workflow Canvas</h3>
+          <p class="lead compact">
+            Wir modellieren Prozesse so, dass sie später wartbar bleiben: klare Trigger, Datenflüsse,
+            Prüfungen und Benachrichtigungen.
+          </p>
+
+          <div class="tour-points">
+            <div class="point"><span class="point-dot"></span> End-to-End Prozesslogik</div>
+            <div class="point"><span class="point-dot"></span> Fehlerhandling & Retries</div>
+            <div class="point"><span class="point-dot"></span> Übergabe & Dokumentation</div>
           </div>
 
-          <div class="case-output">
-            <div class="output-title">Output</div>
-            <ul class="output-list">
-              <li>CRM-Record + Owner + Status</li>
-              <li>Automatische Aufgaben & Erinnerungen</li>
-              <li>Benachrichtigung an Team/Inbox</li>
-              <li>Nachvollziehbarkeit über Audit Trail</li>
-            </ul>
+          <div class="tour-cta">
+            <a class="btn primary" href="#kontakt">Projekt anfragen</a>
+            <a class="btn ghost" href="#anwendungsfaelle">Anwendungsfälle</a>
+          </div>
+        </div>
+
+        <div class="tour-right">
+          <div class="mock">
+            <div class="mock-top">
+              <div class="mock-title">Canvas</div>
+              <div class="mock-chip">v1.0</div>
+            </div>
+            <div class="mock-nodes">
+              <div class="mock-node"><b>Trigger</b><span>Form/E-Mail</span></div>
+              <div class="mock-arrow">→</div>
+              <div class="mock-node"><b>Parse</b><span>PDF/Text</span></div>
+              <div class="mock-arrow">→</div>
+              <div class="mock-node"><b>Decide</b><span>Rules + KI</span></div>
+              <div class="mock-arrow">→</div>
+              <div class="mock-node"><b>Write</b><span>CRM/Ticket</span></div>
+              <div class="mock-arrow">→</div>
+              <div class="mock-node"><b>Notify</b><span>Team/Inbox</span></div>
+            </div>
+            <div class="mock-footer">
+              <span class="pill">Logs</span>
+              <span class="pill">Retries</span>
+              <span class="pill">Fallback</span>
+              <span class="pill">Docs</span>
+            </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- Anwendungsfälle (kurz, kein Roman) -->
+  <!-- Use Cases -->
   <section id="anwendungsfaelle">
     <div class="container">
-      <h2 style="margin-bottom:16px">Typische Anwendungsfälle</h2>
-      <div class="grid">
-        <div class="card span4">
-          <h3>Vertrieb</h3>
-          <p>Lead-Routing, CRM-Updates, Terminlogik, Follow-ups.</p>
+      <div class="section-head">
+        <div class="kicker">Anwendungsfälle</div>
+        <h2>Drei Workflows, die fast jedes KMU sofort spürt.</h2>
+        <p class="lead compact">Kurz, konkret, ohne Theater.</p>
+      </div>
+
+      <div class="usecases">
+        <div class="usecase">
+          <div class="usecase-head">
+            <div class="usecase-title">Vertrieb: Lead → CRM → Termin → Follow-up</div>
+            <div class="usecase-tag">Sales Ops</div>
+          </div>
+          <div class="usecase-body">
+            <div class="uc-line"><span class="uc-k">Input</span><span>Kontaktformular, E-Mail, PDF</span></div>
+            <div class="uc-line"><span class="uc-k">Automatik</span><span>Qualifizierung, Routing, Aufgaben, Reminder</span></div>
+            <div class="uc-line"><span class="uc-k">Output</span><span>CRM-Record + Owner + Status + Terminlogik</span></div>
+          </div>
         </div>
-        <div class="card span4">
-          <h3>Backoffice</h3>
-          <p>Dokumente, Freigaben, Ablage, Erinnerungen.</p>
+
+        <div class="usecase">
+          <div class="usecase-head">
+            <div class="usecase-title">Support: E-Mail → Ticket → Priorität → Antwortentwurf</div>
+            <div class="usecase-tag">Support</div>
+          </div>
+          <div class="usecase-body">
+            <div class="uc-line"><span class="uc-k">Input</span><span>Support-Inbox</span></div>
+            <div class="uc-line"><span class="uc-k">Automatik</span><span>Kategorisierung, Priorisierung, Vorschläge</span></div>
+            <div class="uc-line"><span class="uc-k">Output</span><span>Ticket + SLA/Prio + Draft + Verlauf</span></div>
+          </div>
         </div>
-        <div class="card span4">
-          <h3>Support</h3>
-          <p>Tickets, Priorisierung, Antworten, Wissensfluss.</p>
+
+        <div class="usecase">
+          <div class="usecase-head">
+            <div class="usecase-title">Backoffice: Dokument → Ablage → Freigabe → Erinnerung</div>
+            <div class="usecase-tag">Backoffice</div>
+          </div>
+          <div class="usecase-body">
+            <div class="uc-line"><span class="uc-k">Input</span><span>Rechnungen, Verträge, interne Dokumente</span></div>
+            <div class="uc-line"><span class="uc-k">Automatik</span><span>Benennung, Ordnerlogik, Freigabe, Fristen</span></div>
+            <div class="uc-line"><span class="uc-k">Output</span><span>Saubere Ablage + Freigabe-Status + Erinnerungen</span></div>
+          </div>
         </div>
       </div>
 
-      <div class="grid" style="margin-top:18px">
-        <div class="card span12">
-          <div class="kicker">Systeme</div>
-          <p style="margin:0;color:var(--muted)">
-            E-Mail · Kalender · CRM · Ticketing · Dateiablage · interne Tools · Schnittstellen
-          </p>
+      <div class="cta-band">
+        <div>
+          <div class="cta-title">Du willst wissen, ob das bei euch passt?</div>
+          <div class="cta-sub">Kurze Diagnose, dann klare Empfehlung.</div>
         </div>
+        <a class="btn primary" href="#kontakt">Projekt anfragen</a>
       </div>
     </div>
   </section>
 
   <!-- Vorgehen -->
-  <section id="prozess" aria-labelledby="prozess-heading">
+  <section id="vorgehen">
     <div class="container">
-      <h2 id="prozess-heading" style="margin-bottom:16px">Vorgehen</h2>
+      <div class="section-head">
+        <div class="kicker">Vorgehen</div>
+        <h2>Von Diagnose zu Betrieb – ohne Überraschungen.</h2>
+        <p class="lead compact">Drei Schritte. Klare Outputs.</p>
+      </div>
+
       <div class="grid">
-        <div class="card span4">
-          <div class="kicker">1</div>
+        <div class="card span4 step">
+          <div class="step-top">1</div>
           <h3>Diagnose</h3>
-          <p>Prozess + Systeme + Engpässe. Ergebnis: klare Empfehlung.</p>
+          <p>Prozess + Systeme + Engpässe. Ergebnis: konkrete Roadmap.</p>
         </div>
-        <div class="card span4">
-          <div class="kicker">2</div>
+        <div class="card span4 step">
+          <div class="step-top">2</div>
           <h3>Umsetzung</h3>
           <p>Workflow-Design, Implementierung, Tests, Rollout.</p>
         </div>
-        <div class="card span4">
-          <div class="kicker">3</div>
+        <div class="card span4 step">
+          <div class="step-top">3</div>
           <h3>Betrieb</h3>
           <p>Monitoring, Optimierung, Dokumentation, Übergabe.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sicherheit / Trust -->
+  <section id="sicherheit">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">Sicherheit & Vertrauen</div>
+        <h2>Keine Blackbox. Keine Bastellösung.</h2>
+        <p class="lead compact">Wir bauen so, dass es später wartbar bleibt.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card span4 trust">
+          <h3>Dokumentation</h3>
+          <p>Prozesslogik, Datenfelder, Zuständigkeiten – nachvollziehbar.</p>
+        </div>
+        <div class="card span4 trust">
+          <h3>Logging & Audit Trail</h3>
+          <p>Status, Fehler, Retries, Historie – sichtbar statt geraten.</p>
+        </div>
+        <div class="card span4 trust">
+          <h3>Zugriffe</h3>
+          <p>Rollen, Berechtigungen, minimale Rechte – sauber getrennt.</p>
+        </div>
+      </div>
+
+      <div class="cta-band" style="margin-top:18px">
+        <div>
+          <div class="cta-title">Wenn du Stabilität willst, nicht nur „Automatisierung“</div>
+          <div class="cta-sub">Dann passt Flowix.</div>
+        </div>
+        <a class="btn ghost" href="#kontakt">Projekt anfragen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="kicker">FAQ</div>
+        <h2>Kurze Antworten. Keine Ausreden.</h2>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Wie schnell kann ein Projekt starten?</summary>
+          <div class="faq-body">Nach der Diagnose können wir in der Regel innerhalb weniger Tage mit der Umsetzung starten – abhängig von Systemzugängen und Priorität.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Welche Systeme unterstützt ihr?</summary>
+          <div class="faq-body">Typisch: E-Mail, Kalender, CRM, Ticketing, Dateiablage, interne Tools und Schnittstellen. Entscheidend ist die Systemlandschaft und der Prozess.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Wie sieht „wartbar“ konkret aus?</summary>
+          <div class="faq-body">Dokumentierte Prozesslogik, klare Datenflüsse, Logging, Fehlerhandling, saubere Übergabe. Keine Blackbox.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Gibt es laufenden Betrieb?</summary>
+          <div class="faq-body">Optional. Monitoring und Anpassungen können wir übernehmen oder sauber an euer Team übergeben.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Ist das ein verbindliches Angebot über die Website?</summary>
+          <div class="faq-body">Nein. Die Website dient Information und Anfrage. Ein Vertrag entsteht erst nach expliziter Vereinbarung.</div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Wie läuft die erste Kontaktaufnahme ab?</summary>
+          <div class="faq-body">Du beschreibst kurz Prozess, Systeme und Ziel. Wir melden uns mit Rückfragen oder einem Terminvorschlag.</div>
+        </details>
       </div>
     </div>
   </section>
@@ -208,27 +373,28 @@ Wir ersetzen sie durch robuste, dokumentierte Workflows
   <section id="kontakt" class="contact-section">
     <div class="container">
       <h2>Projekt anfragen</h2>
-      <p class="lead">
-        Kurz beschreiben: Prozess, Systeme, Ziel. Wir melden uns mit Rückfragen und einem Vorschlag fürs Erstgespräch.
+      <p class="lead compact">
+        Kurz beschreiben: Prozess, Systeme, Ziel. Wir melden uns mit Rückfragen oder einem Terminvorschlag.
         Unverbindlich, kein Vertragsschluss über die Website.
       </p>
 
-      <div style="margin-top:14px;margin-bottom:10px">
+      <div class="contact-actions">
         <a class="btn ghost" href="mailto:info@flowixsolutions.de?subject=Projektanfrage%20Flowix%20Solutions&body=Name%3A%20%0AFirma%3A%20%0A%0AProzess%3A%20%0ASysteme%3A%20%0AZiel%3A%20%0A">
           Direkt per E-Mail anfragen
         </a>
       </div>
 
       <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-        <input type="hidden" name="access_key" value="78b364b6-1245-4f78-a761-f2df53b3770c">
+        <input type="hidden" name="access_key" value="DEIN_WEB3FORMS_KEY_HIER">
         <input type="hidden" name="replyto" value="info@flowixsolutions.de">
         <input type="hidden" name="from_name" value="Flowix Website">
         <input type="hidden" name="redirect" value="https://flowixsolutions.de/danke.html">
 
         <div class="grid form-row">
-  <input class="span4" type="text" name="name" placeholder="Name" required>
-  <input class="span8" type="email" name="email" placeholder="E-Mail" required>
-</div>
+          <input class="span4" type="text" name="name" placeholder="Name" required>
+          <input class="span8" type="email" name="email" placeholder="E-Mail" required>
+        </div>
+
         <input type="text" name="company" placeholder="Unternehmen (optional)">
         <textarea name="message" rows="6" placeholder="Kurzbeschreibung: Prozess, Systeme, Ziel" required></textarea>
 
