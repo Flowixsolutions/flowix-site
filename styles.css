@@ -444,3 +444,7 @@ a.link:hover{color:var(--text)}
 @media (max-width: 920px){
   .span4,.span8,.span12{grid-column:span 12}
 }
+body{
+  position: relative;
+  overflow-x: hidden;
+}
