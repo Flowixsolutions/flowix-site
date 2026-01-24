@@ -20,12 +20,12 @@ body::before{
   pointer-events:none;
   z-index:-1;
   background:
-    radial-gradient(900px 600px at 15% 10%, rgba(30,167,255,.12), transparent 55%),
-    radial-gradient(700px 500px at 85% 20%, rgba(30,167,255,.10), transparent 60%),
-    radial-gradient(800px 700px at 60% 90%, rgba(255,255,255,.04), transparent 60%),
-    linear-gradient(180deg, rgba(255,255,255,.02), transparent 35%, rgba(0,0,0,.18));
-  filter: blur(0px);
+    radial-gradient(900px 600px at 15% 10%, rgba(30,167,255,.10), transparent 60%),
+    radial-gradient(700px 520px at 85% 20%, rgba(30,167,255,.08), transparent 62%),
+    radial-gradient(900px 700px at 60% 95%, rgba(30,167,255,.06), transparent 65%),
+    linear-gradient(180deg, rgba(0,0,0,.45), transparent 35%, rgba(0,0,0,.65));
 }
+
 
 
 .container{max-width:1120px;margin:0 auto;padding:24px}
