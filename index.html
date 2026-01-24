@@ -1,65 +1,27 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Flowix Solutions – Automation Engineering für KMU</title>
-<meta name="description" content="Flowix Solutions automatisiert wiederkehrende Abläufe in KMU: Systeme verbinden, Workflows umsetzen, manuelle Arbeit reduzieren – dokumentiert, wartbar und sicher.">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flowix Solutions – Automation Engineering für KMU</title>
+  <meta name="description" content="Flowix Solutions automatisiert wiederkehrende Abläufe in KMU: Systeme verbinden, Workflows umsetzen, manuelle Arbeit reduzieren – dokumentiert, wartbar und sicher.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20260124-3">
 </head>
-<script>
-(function () {
-  const header = document.querySelector('.subnav');
-  if (!header) return;
-
-  let lastY = window.scrollY;
-  let ticking = false;
-
-  function onScroll() {
-    const y = window.scrollY;
-
-    // nur Mobile
-    if (window.innerWidth < 768) {
-      // runter -> hide, hoch -> show
-      if (y > lastY && y > 90) header.classList.add('hidden');
-      else header.classList.remove('hidden');
-    } else {
-      header.classList.remove('hidden');
-    }
-
-    lastY = y;
-    ticking = false;
-  }
-
-  window.addEventListener('scroll', () => {
-    if (!ticking) {
-      window.requestAnimationFrame(onScroll);
-      ticking = true;
-    }
-  }, { passive: true });
-})();
-</script>
 
 <body>
+
+  <!-- Minimaler Header (nur Brand) -->
   <div class="container">
-    <header aria-label="Hauptnavigation">
+    <header aria-label="Header">
       <div class="logo">
         <img alt="Flowix Solutions Logo" src="./flowix-logo.png"/>
         <span>Flowix Solutions</span>
       </div>
-      <nav class="topnav">
-        <a href="#features">Features</a>
-        <a href="#anwendungsfaelle">Anwendungsfälle</a>
-        <a href="#vorgehen">Vorgehen</a>
-        <a href="#sicherheit">Sicherheit</a>
-        <a href="#faq">FAQ</a>
-        <a class="nav-cta" href="#kontakt">Projekt anfragen</a>
-      </nav>
     </header>
   </div>
 
-  <!-- Sticky Subnav -->
+  <!-- Sticky Subnav (einzige Navigation) -->
   <div class="subnav" role="navigation" aria-label="Seitennavigation">
     <div class="container subnav-inner">
       <div class="subnav-links">
@@ -161,7 +123,7 @@
     </div>
   </section>
 
-  <!-- OVERVIEW / FEATURES -->
+  <!-- FEATURES -->
   <section id="features">
     <div class="container">
       <div class="section-head">
@@ -187,14 +149,12 @@
         </div>
       </div>
 
-      <!-- Feature Tour -->
       <div class="tour">
         <div class="tour-left">
           <div class="kicker">Feature Tour</div>
           <h3>Workflow Canvas</h3>
           <p class="lead compact">
-            Wir modellieren Prozesse so, dass sie später wartbar bleiben: klare Trigger, Datenflüsse,
-            Prüfungen und Benachrichtigungen.
+            Klare Trigger, Datenflüsse, Prüfungen und Benachrichtigungen – so, dass es später wartbar bleibt.
           </p>
 
           <div class="tour-points">
@@ -239,7 +199,7 @@
     </div>
   </section>
 
-  <!-- Use Cases -->
+  <!-- USECASES -->
   <section id="anwendungsfaelle">
     <div class="container">
       <div class="section-head">
@@ -296,7 +256,7 @@
     </div>
   </section>
 
-  <!-- Vorgehen -->
+  <!-- VORGEHEN -->
   <section id="vorgehen">
     <div class="container">
       <div class="section-head">
@@ -325,7 +285,7 @@
     </div>
   </section>
 
-  <!-- Sicherheit / Trust -->
+  <!-- SICHERHEIT -->
   <section id="sicherheit">
     <div class="container">
       <div class="section-head">
@@ -401,7 +361,7 @@
     </div>
   </section>
 
-  <!-- Kontakt -->
+  <!-- KONTAKT -->
   <section id="kontakt" class="contact-section">
     <div class="container">
       <h2>Projekt anfragen</h2>
@@ -445,5 +405,38 @@
       <span><a class="link" href="impressum.html">Impressum</a> · <a class="link" href="datenschutz.html">Datenschutz</a></span>
     </div>
   </footer>
+
+  <!-- Auto-hide Subnav on scroll (mobile) -->
+  <script>
+  (function () {
+    const header = document.querySelector('.subnav');
+    if (!header) return;
+
+    let lastY = window.scrollY;
+    let ticking = false;
+
+    function run() {
+      const y = window.scrollY;
+
+      if (window.innerWidth < 768) {
+        if (y > lastY && y > 90) header.classList.add('hidden');
+        else header.classList.remove('hidden');
+      } else {
+        header.classList.remove('hidden');
+      }
+
+      lastY = y;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(run);
+        ticking = true;
+      }
+    }, { passive: true });
+  })();
+  </script>
+
 </body>
 </html>
