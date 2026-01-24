@@ -64,18 +64,14 @@ header{display:flex;align-items:center;justify-content:space-between;padding:12p
 
 }
 .subnav-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:14px;
-  padding-top:10px;
-  padding-bottom:10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
-.subnav-links{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
+.subnav-links a{
+  padding: 7px 10px;
+  font-size: 13px;
 }
+
 .subnav-links a{
   color:rgba(191,217,255,.92);
   text-decoration:none;
