@@ -344,6 +344,6 @@ a.link:hover{color:var(--text)}
   .impressum-grid{grid-template-columns:1fr}
 }
 @media (min-width: 768px){
-  /* Auto-hide nur mobile */
-  .subnav.hidden{ transform:none; }
+  .subnav.hidden{ transform: translateY(-110%) !important; }
 }
+
