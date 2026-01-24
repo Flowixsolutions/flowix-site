@@ -492,3 +492,26 @@ body::before{
   /* macht’s edler */
   opacity: .55;
 }
+/* GRAIN – nimmt den flachen Look raus */
+body::after{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  background:
+    repeating-linear-gradient(0deg,
+      rgba(255,255,255,.018) 0px,
+      rgba(255,255,255,.018) 1px,
+      transparent 2px,
+      transparent 4px),
+    repeating-linear-gradient(90deg,
+      rgba(0,0,0,.018) 0px,
+      rgba(0,0,0,.018) 1px,
+      transparent 2px,
+      transparent 5px);
+
+  opacity: .15;
+  mix-blend-mode: overlay;
+}
