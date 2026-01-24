@@ -278,3 +278,36 @@ a.link:hover{color:var(--text)}
   .case-grid{grid-template-columns:1fr}
   .span4,.span12{grid-column:span 12}
 }
+.impressum-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.impressum-block{
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.impressum-title{
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: #74C6FF;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.impressum-text{
+  color: rgba(233,243,255,.92);
+  line-height: 1.5;
+}
+
+@media (max-width: 920px){
+  .impressum-grid{
+    grid-template-columns: 1fr;
+  }
+}
