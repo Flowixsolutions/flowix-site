@@ -159,8 +159,6 @@ p.lead.compact{font-size:18px;max-width:820px}
 
 /* Hero */
 .hero{
-  position:relative;
-  padding:120px 0 90px;
   background:
     radial-gradient(900px 520px at 70% -10%, rgba(30,167,255,.18), transparent),
     radial-gradient(700px 420px at 20% 20%, rgba(30,167,255,.10), transparent 60%);
