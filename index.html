@@ -8,6 +8,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
 </head>
+<script>
+(function () {
+  const header = document.querySelector('.subnav');
+  if (!header) return;
+
+  let lastY = window.scrollY;
+  let ticking = false;
+
+  function onScroll() {
+    const y = window.scrollY;
+
+    // nur Mobile
+    if (window.innerWidth < 768) {
+      // runter -> hide, hoch -> show
+      if (y > lastY && y > 90) header.classList.add('hidden');
+      else header.classList.remove('hidden');
+    } else {
+      header.classList.remove('hidden');
+    }
+
+    lastY = y;
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+})();
+</script>
 
 <body>
   <div class="container">
