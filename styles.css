@@ -92,9 +92,10 @@ header{display:flex;align-items:center;justify-content:space-between;padding:12p
 /* Typography */
 section{padding:64px 0}
 section:nth-of-type(even){
-  background: rgba(255,255,255,.012);
+  background: rgba(0,0,0,.10);
   border-top: 1px solid rgba(255,255,255,.04);
   border-bottom: 1px solid rgba(255,255,255,.04);
+}
 }
 
 }
