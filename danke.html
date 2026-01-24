@@ -1,67 +1,203 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Danke – Flowix Solutions</title>
-  <meta name="description" content="Danke für deine Anfrage. Wir melden uns zeitnah zurück.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anfrage eingegangen – Flowix Solutions</title>
+
   <link rel="stylesheet" href="./styles.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #061824 0%, #040f18 100%);
+      color: #eaf2f9;
+    }
+
+    .thanks-wrapper{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:40px 20px;
+    }
+
+    .thanks-container{
+      max-width:720px;
+      width:100%;
+    }
+
+    .thanks-eyebrow{
+      font-size:12px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:#4bb3ff;
+      margin-bottom:14px;
+    }
+
+    .thanks-title{
+      font-size:42px;
+      line-height:1.15;
+      font-weight:600;
+      margin:0 0 16px 0;
+    }
+
+    .thanks-text{
+      font-size:18px;
+      line-height:1.6;
+      opacity:.85;
+      margin-bottom:40px;
+    }
+
+    .confirmation-card{
+      padding:32px 36px;
+      display:grid;
+      grid-template-columns:1.2fr 1fr;
+      gap:32px;
+
+      background:rgba(255,255,255,0.04);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius:16px;
+      backdrop-filter:blur(6px);
+    }
+
+    .confirmation-status{
+      display:inline-block;
+      font-size:12px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:#4bb3ff;
+      margin-bottom:12px;
+    }
+
+    .confirmation-left h3{
+      margin:0 0 6px 0;
+      font-size:22px;
+      font-weight:600;
+    }
+
+    .confirmation-left p{
+      margin:0;
+      opacity:.8;
+    }
+
+    .confirmation-right{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    .label{
+      display:block;
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      opacity:.6;
+      margin-bottom:4px;
+    }
+
+    .confirmation-right p,
+    .confirmation-right a{
+      margin:0;
+      font-size:15px;
+      color:#eaf2f9;
+      text-decoration:none;
+    }
+
+    .confirmation-right a{
+      color:#4bb3ff;
+    }
+
+    .confirmation-right a:hover{
+      text-decoration:underline;
+    }
+
+    .thanks-actions{
+      margin-top:40px;
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+      padding:12px 22px;
+      border-radius:10px;
+      font-size:15px;
+      font-weight:500;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .btn-primary{
+      background:#2fb4ff;
+      color:#04131f;
+    }
+
+    .btn-secondary{
+      border:1px solid rgba(255,255,255,0.25);
+      color:#eaf2f9;
+    }
+
+    .btn-secondary:hover{
+      background:rgba(255,255,255,0.05);
+    }
+
+    @media(max-width:768px){
+      .thanks-title{
+        font-size:34px;
+      }
+
+      .confirmation-card{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <div class="container">
-    <header aria-label="Hauptnavigation">
-      <div class="logo">
-        <img alt="Flowix Solutions Logo" src="./flowix-logo.png"/>
-        <span>Flowix Solutions</span>
-      </div>
-      <nav>
-        <a href="./index.html">Startseite</a>
-        <a href="impressum.html">Impressum</a>
-        <a href="datenschutz.html">Datenschutz</a>
-      </nav>
-    </header>
-  </div>
+  <div class="thanks-wrapper">
+    <div class="thanks-container">
 
-  <section class="hero" style="padding:110px 0 70px;">
-    <div class="container">
-      <div class="kicker">Anfrage eingegangen</div>
-      <h1>Danke. Wir melden uns zeitnah.</h1>
-      <p class="lead" style="max-width:760px">
-        Wir prüfen deine Angaben und kommen mit Rückfragen oder einem Vorschlag für ein Erstgespräch auf dich zu.
-        Antwort in der Regel innerhalb von 12-24 Stunden.
+      <div class="thanks-eyebrow">Anfrage eingegangen</div>
+      <h1 class="thanks-title">Danke. Wir melden uns zeitnah.</h1>
+
+      <p class="thanks-text">
+        Wir prüfen deine Angaben und kommen mit gezielten Rückfragen oder
+        einem konkreten Terminvorschlag auf dich zu.
       </p>
 
-      <div style="margin-top:18px;display:flex;gap:12px;flex-wrap:wrap;">
-        <a class="btn primary" href="./index.html">Zur Startseite</a>
-        <a class="btn ghost" href="mailto:info@flowixsolutions.de?subject=R%C3%BCckfrage%20zur%20Projektanfrage&body=Hi%20Flowix%2C%0Aich%20habe%20gerade%20das%20Formular%20abgeschickt%20und%20m%C3%B6chte%20noch%20etwas%20erg%C3%A4nzen%3A%20">
+      <div class="confirmation-card">
+        <div class="confirmation-left">
+          <span class="confirmation-status">Status</span>
+          <h3>In Bearbeitung</h3>
+          <p>Antwort in der Regel innerhalb von 12–24 Stunden.</p>
+        </div>
+
+        <div class="confirmation-right">
+          <div>
+            <span class="label">Nächster Schritt</span>
+            <p>Rückfragen oder Terminvorschlag per E-Mail</p>
+          </div>
+
+          <div>
+            <span class="label">Kontakt</span>
+            <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="thanks-actions">
+        <a href="/" class="btn-primary">Zur Startseite</a>
+        <a href="mailto:info@flowixsolutions.de" class="btn-secondary">
           Ergänzung per E-Mail senden
         </a>
       </div>
 
-      <div class="proof-bar" style="margin-top:24px">
-        <div class="proof-item">
-          <div class="proof-title">Nächster Schritt</div>
-          <div class="proof-text">Rückfragen / Terminvorschlag</div>
-        </div>
-        <div class="proof-item">
-          <div class="proof-title">Ziel</div>
-          <div class="proof-text">Klare Empfehlung in 1 Gespräch</div>
-        </div>
-        <div class="proof-item">
-          <div class="proof-title">Kontakt</div>
-          <div class="proof-text">info@flowixsolutions.de</div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-      <span>© 2026 Can Yenigün – Flowix Solutions · <a class="link" href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></span>
-      <span><a class="link" href="impressum.html">Impressum</a> · <a class="link" href="datenschutz.html">Datenschutz</a></span>
-    </div>
-  </footer>
+  </div>
 </body>
 </html>
