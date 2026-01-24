@@ -550,68 +550,78 @@ a.link:hover{color:var(--text)}
   .impressum-grid{grid-template-columns: 1fr}
 }
 /* =========================================================
-   FLOWIX HERO KEYVISUAL (Enterprise / Tech)
+   FLOWIX HERO KEYVISUAL – CLEAN ENTERPRISE VERSION
    ========================================================= */
 
 .hero{
   position: relative;
-  padding: 120px 0 90px;
   overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    rgba(7,24,35,.92),
+    rgba(7,24,35,.98)
+  );
 }
 
-/* Logo-Keyvisual + Tech-Glow */
+/* Subtiles Brand-Keyvisual + Tech-Glow */
 .hero::before{
   content:"";
   position:absolute;
-  inset:-140px -140px -140px -140px;
+  inset:-120px -120px -120px -120px;
   pointer-events:none;
+  z-index:0;
 
   background:
-    /* Tech-Glow */
-    radial-gradient(900px 520px at 70% -10%, rgba(30,167,255,.16), transparent 60%),
-    radial-gradient(700px 420px at 20% 20%, rgba(30,167,255,.10), transparent 60%),
+    /* dezente Tech-Glows */
+    radial-gradient(900px 520px at 70% -10%, rgba(30,167,255,.14), transparent 60%),
+    radial-gradient(700px 420px at 20% 20%, rgba(30,167,255,.08), transparent 60%),
 
-    /* Flowix Titelbild */
+    /* Flowix Logo – extrem dezent */
     url("./flowix-logo.png");
 
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 70% -10%, 20% 20%, 85% 45%;
-  background-size: auto, auto, 880px auto;
 
-  opacity: .14;
-  filter: blur(.2px) saturate(1.05);
+  /* Logo weit rechts/unten, weg vom Content */
+  background-position: 70% -10%, 20% 20%, 92% 65%;
+
+  /* bewusst klein + weich */
+  background-size: auto, auto, 520px auto;
+
+  opacity: .05;
+  filter: blur(1.4px) saturate(1.05);
+  mix-blend-mode: screen;
   transform: translateZ(0);
-  z-index: 0;
 }
 
-/* Vignette – hält es edel & fokussiert */
+/* Vignette für Fokus links */
 .hero::after{
   content:"";
   position:absolute;
   inset:0;
   pointer-events:none;
+  z-index:1;
+
   background:
     radial-gradient(
-      1200px 700px at 50% 40%,
+      1200px 700px at 30% 40%,
       rgba(0,0,0,0),
-      rgba(0,0,0,.38)
+      rgba(0,0,0,.45)
     );
-  z-index: 1;
 }
 
-/* Hero Content immer darüber */
+/* Hero-Inhalt IMMER über allem */
 .hero > *{
   position: relative;
   z-index: 2;
 }
 
 /* =========================================================
-   Mobile Feinschliff
+   Mobile – noch zurückhaltender
    ========================================================= */
 @media (max-width: 768px){
   .hero::before{
-    background-size: auto, auto, 620px auto;
-    background-position: 70% 0%, 20% 20%, 50% 35%;
-    opacity: .10;
+    background-position: 70% 0%, 20% 20%, 50% 75%;
+    background-size: auto, auto, 360px auto;
+    opacity: .04;
   }
 }
