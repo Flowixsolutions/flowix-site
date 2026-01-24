@@ -46,13 +46,23 @@ header{display:flex;align-items:center;justify-content:space-between;padding:12p
 }
 
 /* Sticky Subnav */
-.subnav{
+  .subnav{
   position:sticky;
   top:0;
   z-index:50;
   backdrop-filter: blur(10px);
   background: rgba(7,24,35,.78);
   border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+.subnav::after{
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:-1px;
+  height:1px;
+  background: linear-gradient(90deg, transparent, rgba(30,167,255,.35), transparent);
+}
+
 }
 .subnav-inner{
   display:flex;
