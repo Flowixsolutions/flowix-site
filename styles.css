@@ -448,3 +448,47 @@ body{
   position: relative;
   overflow-x: hidden;
 }
+/* TECH BACKGROUND – edel, dunkel, nicht aufhellend */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+
+  /* 1) feines Grid + 2) dünne horizontale Linien + 3) dezente Glows */
+  background:
+    /* micro grid */
+    linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+
+    /* macro grid (gröber, noch subtiler) */
+    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px),
+
+    /* blue glows */
+    radial-gradient(900px 600px at 15% 10%, rgba(30,167,255,.14), transparent 60%),
+    radial-gradient(800px 520px at 85% 25%, rgba(30,167,255,.10), transparent 62%),
+    radial-gradient(900px 700px at 55% 90%, rgba(30,167,255,.08), transparent 66%);
+
+  background-size:
+    22px 22px,
+    22px 22px,
+    120px 120px,
+    120px 120px,
+    auto,
+    auto,
+    auto;
+
+  background-position:
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    0 0,
+    0 0;
+
+  /* macht’s edler */
+  opacity: .55;
+}
