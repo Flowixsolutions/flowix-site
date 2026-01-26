@@ -6,7 +6,7 @@
   <title>Flowix Solutions – Automatisierungstechnik für KMU</title>
   <meta name="description" content="Flowix Solutions automatisiert wiederkehrende Abläufe in KMU: Systeme verbinden, Workflows umsetzen, manuelle Arbeit reduzieren – dokumentiert, wartbar und sicher.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=holo1">
+  <link rel="stylesheet" href="./styles.css?v=finalA2">
 </head>
 
 <body>
@@ -61,68 +61,75 @@
         </div>
       </div>
 
-      <!-- Hero UI Mock -->
-    <div class="hero-right">
-    <div class="ui">
-          <div class="ui-top">
-            <div class="ui-title">Workflow Dashboard</div>
-            <div class="ui-pill">LIVE</div>
+      <!-- Dashboard mit Holo-Frame + Bodenring -->
+      <div class="hero-right">
+        <div class="holo">
+          <div class="holo-frame" aria-hidden="true"></div>
+          <div class="holo-ring" aria-hidden="true"></div>
+
+          <div class="ui holo-ui">
+            <div class="ui-top">
+              <div class="ui-title">Workflow Dashboard</div>
+              <div class="ui-pill">LIVE</div>
+            </div>
+
+            <div class="ui-kpis">
+              <div class="kpi">
+                <div class="kpi-label">Automatisierte Schritte</div>
+                <div class="kpi-value">128 / Tag</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-label">Fehlerquote</div>
+                <div class="kpi-value">0.3%</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-label">Zeitersparnis</div>
+                <div class="kpi-value">~6.2h/W</div>
+              </div>
+            </div>
+
+            <div class="ui-flow">
+              <div class="flow-row">
+                <span class="flow-tag">Lead</span><span class="flow-arrow">→</span>
+                <span class="flow-tag">Qualifizierung</span><span class="flow-arrow">→</span>
+                <span class="flow-tag">CRM</span><span class="flow-arrow">→</span>
+                <span class="flow-tag">Termin</span><span class="flow-arrow">→</span>
+                <span class="flow-tag">Follow-up</span>
+              </div>
+              <div class="ui-meta">Logging · Fehlerhandling · Audit Trail · Dokumentation</div>
+            </div>
+
+            <div class="ui-list">
+              <div class="ui-item">
+                <span class="ui-bullet ok"></span>
+                <div>
+                  <div class="ui-item-title">Lead verarbeitet</div>
+                  <div class="ui-item-sub">CRM-Record + Owner gesetzt</div>
+                </div>
+                <div class="ui-time">vor 2 Min</div>
+              </div>
+              <div class="ui-item">
+                <span class="ui-bullet ok"></span>
+                <div>
+                  <div class="ui-item-title">Ticket priorisiert</div>
+                  <div class="ui-item-sub">Kategorie: „Wichtig“</div>
+                </div>
+                <div class="ui-time">vor 7 Min</div>
+              </div>
+              <div class="ui-item">
+                <span class="ui-bullet ok"></span>
+                <div>
+                  <div class="ui-item-title">Fallback aktiv</div>
+                  <div class="ui-item-sub">Schnittstelle langsam, Retry geplant</div>
+                </div>
+                <div class="ui-time">vor 12 Min</div>
+              </div>
+            </div>
           </div>
 
-          <div class="ui-kpis">
-            <div class="kpi">
-              <div class="kpi-label">Automatisierte Schritte</div>
-              <div class="kpi-value">128 / Tag</div>
-            </div>
-            <div class="kpi">
-              <div class="kpi-label">Fehlerquote</div>
-              <div class="kpi-value">0.3%</div>
-            </div>
-            <div class="kpi">
-              <div class="kpi-label">Zeitersparnis</div>
-              <div class="kpi-value">~6.2h/W</div>
-            </div>
-          </div>
-
-          <div class="ui-flow">
-            <div class="flow-row">
-              <span class="flow-tag">Lead</span><span class="flow-arrow">→</span>
-              <span class="flow-tag">Qualifizierung</span><span class="flow-arrow">→</span>
-              <span class="flow-tag">CRM</span><span class="flow-arrow">→</span>
-              <span class="flow-tag">Termin</span><span class="flow-arrow">→</span>
-              <span class="flow-tag">Follow-up</span>
-            </div>
-            <div class="ui-meta">Logging · Fehlerhandling · Audit Trail · Dokumentation</div>
-          </div>
-
-          <div class="ui-list">
-            <div class="ui-item">
-              <span class="ui-bullet ok"></span>
-              <div>
-                <div class="ui-item-title">Lead verarbeitet</div>
-                <div class="ui-item-sub">CRM-Record + Owner gesetzt</div>
-              </div>
-              <div class="ui-time">vor 2 Min</div>
-            </div>
-            <div class="ui-item">
-              <span class="ui-bullet ok"></span>
-              <div>
-                <div class="ui-item-title">Ticket priorisiert</div>
-                <div class="ui-item-sub">Kategorie: „Wichtig“</div>
-              </div>
-              <div class="ui-time">vor 7 Min</div>
-            </div>
-            <div class="ui-item">
-              <span class="ui-bullet ok"></span>
-              <div>
-                <div class="ui-item-title">Fallback aktiv</div>
-                <div class="ui-item-sub">Schnittstelle langsam, Retry geplant</div>
-              </div>
-              <div class="ui-time">vor 12 Min</div>
-            </div>
-          </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -208,7 +215,7 @@
     <div class="container">
       <div class="section-head">
         <div class="kicker">Vorgehen</div>
-        <h2>Von Diagnose zu Betrieb </h2>
+        <h2>Von Diagnose zu Betrieb</h2>
         <p class="lead compact">Drei Schritte. Klare Outputs.</p>
       </div>
 
@@ -276,18 +283,6 @@
           <div class="faq-body">Typisch: E-Mail, Kalender, CRM, Ticketing, Dateiablage, interne Tools und Schnittstellen.</div>
         </details>
         <details class="faq-item">
-          <summary>Wie sieht „wartbar“ konkret aus?</summary>
-          <div class="faq-body">Dokumentierte Prozesslogik, klare Datenflüsse, Logging, Fehlerhandling, saubere Übergabe. Keine Blackbox.</div>
-        </details>
-        <details class="faq-item">
-          <summary>Gibt es laufenden Betrieb?</summary>
-          <div class="faq-body">Optional. Monitoring und Anpassungen können wir übernehmen oder sauber an euer Team übergeben.</div>
-        </details>
-        <details class="faq-item">
-          <summary>Ist das ein verbindliches Angebot über die Website?</summary>
-          <div class="faq-body">Nein. Die Website dient Information und Anfrage. Ein Vertrag entsteht erst nach expliziter Vereinbarung.</div>
-        </details>
-        <details class="faq-item">
           <summary>Wie läuft die erste Kontaktaufnahme ab?</summary>
           <div class="faq-body">Sie beschreiben uns kurz Prozess, Systeme und Ziel. Wir melden uns mit Rückfragen oder einem Terminvorschlag.</div>
         </details>
@@ -305,7 +300,7 @@
       </p>
 
       <div class="contact-actions">
-        <a class="btn ghost" href="mailto:info@flowixsolutions.de?subject=Projektanfrage%20Flowix%20Solutions&body=Name%3A%20%0AFirma%3A%20%0A%0AProzess%3A%20%0ASysteme%3A%20%0AZiel%3A%20%0A">
+        <a class="btn ghost" href="mailto:info@flowixsolutions.de?subject=Projektanfrage%20Flowix%20Solutions">
           Direkt per E-Mail anfragen
         </a>
       </div>
@@ -351,8 +346,6 @@
 
     function update() {
       const y = window.scrollY;
-
-      // runter -> hide, hoch -> show (ab kleiner Schwelle)
       if (y > lastY && y > 120) bar.classList.add('hidden');
       else bar.classList.remove('hidden');
 
