@@ -346,53 +346,89 @@ a.link:hover{color:var(--text)}
 }
 
 /* =========================
-   HERO BACKGROUND (Image)
+   HERO – Weg A (Background + HUD + Glass)
    ========================= */
 
 .hero{
-  position: relative;
-  overflow: hidden;
+  position:relative;
+  padding:120px 0 90px;
+  overflow:hidden;
+  background:#071823;
 }
 
-/* Bildlayer */
+/* Background image */
 .hero-bg{
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: url("./hero-bg.png") center/cover no-repeat;
-  opacity: .45;           /* steuert Intensität */
-  filter: saturate(1.05) contrast(1.05);
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:url("./hero-bg.png") center/cover no-repeat;
+  opacity:.78;
+  filter:saturate(1.08) contrast(1.12);
 }
 
-/* Dunkler Verlauf für Lesbarkeit links */
-.hero::after{
-  content:"";
+/* HUD overlay */
+.hero-hud{
   position:absolute;
   inset:0;
   z-index:1;
   pointer-events:none;
   background:
+    linear-gradient(rgba(255,255,255,.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.055) 1px, transparent 1px),
+    linear-gradient(rgba(255,255,255,.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.028) 1px, transparent 1px),
+    radial-gradient(900px 520px at 70% 20%, rgba(30,167,255,.18), transparent 60%),
+    radial-gradient(900px 700px at 85% 85%, rgba(30,167,255,.12), transparent 70%);
+  background-size:
+    34px 34px, 34px 34px,
+    140px 140px, 140px 140px,
+    auto, auto;
+  opacity:.26;
+  mix-blend-mode:screen;
+}
+
+/* Dark focus for text */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  background:
     linear-gradient(90deg,
-      rgba(7,24,35,.95) 0%,
-      rgba(7,24,35,.88) 30%,
-      rgba(7,24,35,.65) 55%,
-      rgba(7,24,35,.30) 75%,
+      rgba(7,24,35,.94) 0%,
+      rgba(7,24,35,.86) 30%,
+      rgba(7,24,35,.58) 55%,
+      rgba(7,24,35,.22) 75%,
       rgba(7,24,35,0) 100%);
 }
 
-/* Content immer oben */
+/* Content above layers */
 .hero > .container{
-  position: relative;
-  z-index: 2;
+  position:relative;
+  z-index:3;
 }
 
-/* Mobile: Bild etwas stärker abdunkeln */
+/* Glass dashboard stronger */
+.ui{
+  background: rgba(11,31,47,.58) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,.18) !important;
+  box-shadow:
+    0 28px 80px rgba(0,0,0,.55),
+    0 0 0 1px rgba(255,255,255,.06) inset,
+    0 0 60px rgba(30,167,255,.12);
+}
+
+/* Mobile tuning */
 @media (max-width: 768px){
-  .hero-bg{ opacity: .35; }
+  .hero-bg{ opacity:.62; }
+  .hero-hud{ opacity:.18; }
   .hero::after{
     background: linear-gradient(180deg,
       rgba(7,24,35,.92) 0%,
-      rgba(7,24,35,.70) 55%,
+      rgba(7,24,35,.62) 55%,
       rgba(7,24,35,.92) 100%);
   }
 }
