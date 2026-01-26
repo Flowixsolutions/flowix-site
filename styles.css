@@ -344,3 +344,54 @@ a.link:hover{color:var(--text)}
     grid-template-columns:1fr;
   }
 }
+/* =========================
+   HERO BACKGROUND (Image)
+   ========================= */
+
+.hero{
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bildlayer */
+.hero-bg{
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: url("./hero-bg.png") center/cover no-repeat;
+  opacity: .45;           /* steuert Intensität */
+  filter: saturate(1.05) contrast(1.05);
+}
+
+/* Dunkler Verlauf für Lesbarkeit links */
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(90deg,
+      rgba(7,24,35,.95) 0%,
+      rgba(7,24,35,.88) 30%,
+      rgba(7,24,35,.65) 55%,
+      rgba(7,24,35,.30) 75%,
+      rgba(7,24,35,0) 100%);
+}
+
+/* Content immer oben */
+.hero > .container{
+  position: relative;
+  z-index: 2;
+}
+
+/* Mobile: Bild etwas stärker abdunkeln */
+@media (max-width: 768px){
+  .hero-bg{ opacity: .35; }
+  .hero::after{
+    background: linear-gradient(180deg,
+      rgba(7,24,35,.92) 0%,
+      rgba(7,24,35,.70) 55%,
+      rgba(7,24,35,.92) 100%);
+  }
+}
