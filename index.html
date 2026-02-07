@@ -6,7 +6,7 @@
   <title>Flowix Solutions – Automatisierungstechnik für KMU</title>
   <meta name="description" content="Flowix Solutions automatisiert wiederkehrende Abläufe in KMU: Systeme verbinden, Workflows umsetzen, manuelle Arbeit reduzieren – dokumentiert, wartbar und sicher.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=hero1">
+  <link rel="stylesheet" href="./styles.css?v=holo2">
 </head>
 
 <body>
@@ -37,14 +37,16 @@
 
   <!-- HERO -->
   <section class="hero">
+    <!-- These layers are REQUIRED for the “Infosys/Adesso”-style depth -->
     <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-hud" aria-hidden="true"></div>
 
     <div class="container hero-grid">
       <div class="hero-left">
         <div class="kicker">Automatisierungstechnik</div>
         <h1>Automatisierung, die für Sie arbeitet.</h1>
         <p class="lead">
-          Wir bauen robuste Workflows über eure bestehenden Systeme hinweg – mit sauberer Dokumentation,
+          Wir bauen robuste Workflows über Ihre bestehenden Systeme hinweg – mit sauberer Dokumentation,
           Logging und Übergabe.
         </p>
 
@@ -60,8 +62,8 @@
         </div>
       </div>
 
-      <!-- Hero UI Mock -->
-      <div class="hero-right" aria-label="UI Mock">
+      <!-- Dashboard / UI (glow + floor ring comes from CSS .ui::before/.ui::after) -->
+      <div class="hero-right">
         <div class="ui">
           <div class="ui-top">
             <div class="ui-title">Workflow Dashboard</div>
@@ -112,7 +114,7 @@
               <div class="ui-time">vor 7 Min</div>
             </div>
             <div class="ui-item">
-              <span class="ui-bullet ok"></span>
+              <span class="ui-bullet warn"></span>
               <div>
                 <div class="ui-item-title">Fallback aktiv</div>
                 <div class="ui-item-sub">Schnittstelle langsam, Retry geplant</div>
@@ -122,6 +124,7 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -207,7 +210,7 @@
     <div class="container">
       <div class="section-head">
         <div class="kicker">Vorgehen</div>
-        <h2>Von Diagnose zu Betrieb </h2>
+        <h2>Von Diagnose zu Betrieb</h2>
         <p class="lead compact">Drei Schritte. Klare Outputs.</p>
       </div>
 
@@ -271,16 +274,16 @@
           <div class="faq-body">Nach der Diagnose können wir in der Regel innerhalb weniger Tage mit der Umsetzung starten – abhängig von Systemzugängen und Priorität.</div>
         </details>
         <details class="faq-item">
-          <summary>Welche Systeme unterstützt ihr?</summary>
+          <summary>Welche Systeme unterstützen Sie?</summary>
           <div class="faq-body">Typisch: E-Mail, Kalender, CRM, Ticketing, Dateiablage, interne Tools und Schnittstellen.</div>
         </details>
         <details class="faq-item">
           <summary>Wie sieht „wartbar“ konkret aus?</summary>
-          <div class="faq-body">Dokumentierte Prozesslogik, klare Datenflüsse, Logging, Fehlerhandling, saubere Übergabe. Keine Blackbox.</div>
+          <div class="faq-body">Dokumentierte Prozesslogik, klare Datenflüsse, Logging, Fehlerhandling, saubere Übergabe.</div>
         </details>
         <details class="faq-item">
           <summary>Gibt es laufenden Betrieb?</summary>
-          <div class="faq-body">Optional. Monitoring und Anpassungen können wir übernehmen oder sauber an euer Team übergeben.</div>
+          <div class="faq-body">Optional. Monitoring und Anpassungen können wir übernehmen oder sauber an Ihr Team übergeben.</div>
         </details>
         <details class="faq-item">
           <summary>Ist das ein verbindliches Angebot über die Website?</summary>
@@ -326,7 +329,7 @@
         <button type="submit" class="btn primary">Anfrage senden</button>
 
         <p class="form-note">
-          Mit dem Absenden erklärst du dich mit der Verarbeitung deiner Angaben gemäß Datenschutzerklärung einverstanden.
+          Mit dem Absenden erklären Sie sich mit der Verarbeitung Ihrer Angaben gemäß Datenschutzerklärung einverstanden.
         </p>
       </form>
     </div>
@@ -350,11 +353,8 @@
 
     function update() {
       const y = window.scrollY;
-
-      // runter -> hide, hoch -> show (ab kleiner Schwelle)
       if (y > lastY && y > 120) bar.classList.add('hidden');
       else bar.classList.remove('hidden');
-
       lastY = y;
       ticking = false;
     }
