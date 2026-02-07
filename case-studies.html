@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Studies – Flowix Solutions</title>
+  <meta name="description" content="Case Studies: Beispiele für Automatisierung zur Senkung von Prozesskosten – Backoffice, Support, Vertrieb.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=nav2">
+</head>
+<body>
+
+  <div class="container">
+    <header aria-label="Header">
+      <div class="logo">
+        <a href="./index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit">
+          <img alt="Flowix Solutions Logo" src="./flowix-logo.png"/>
+          <span>Flowix Solutions</span>
+        </a>
+      </div>
+    </header>
+  </div>
+
+  <div class="subnav" role="navigation" aria-label="Hauptnavigation">
+    <div class="container subnav-inner">
+      <div class="subnav-links">
+        <a href="./leistungen.html">Leistungen</a>
+        <a href="./pakete.html">Pakete</a>
+        <a href="./branchen.html">Branchen</a>
+        <a href="./case-studies.html">Case Studies</a>
+        <a href="./ueber-uns.html">Über uns</a>
+        <a href="./kontakt.html">Kontakt</a>
+      </div>
+      <a class="btn primary subnav-cta" href="./kontakt.html">Projekt anfragen</a>
+    </div>
+  </div>
+
+  <section class="hero" style="padding:84px 0 40px">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-hud" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="kicker">Case Studies</div>
+      <h1>Vorher / Nachher – klar und nachvollziehbar.</h1>
+      <p class="lead">Wenn Sie noch am Anfang stehen: Wir starten auch mit anonymisierten Beispielen.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="usecases">
+        <div class="usecase">
+          <div class="usecase-head">
+            <div class="usecase-title">Backoffice: Dokumente & Freigaben</div>
+            <div class="usecase-tag">CostCut Pro</div>
+          </div>
+          <div class="usecase-body">
+            <div class="uc-line"><span class="uc-k">Vorher</span><span>Belege per Mail, manuelle Ablage, Rückfragen, keine Fristenlogik.</span></div>
+            <div class="uc-line"><span class="uc-k">Nachher</span><span>Automatische Benennung & Ablage, Freigabeprozess, Erinnerungen, Status sichtbar.</span></div>
+            <div class="uc-line"><span class="uc-k">Ergebnis</span><span>Weniger Nacharbeit, weniger Suchzeit, klare Zuständigkeiten.</span></div>
+          </div>
+        </div>
+
+        <div class="usecase">
+          <div class="usecase-head">
+            <div class="usecase-title">Support: Routing & Priorität</div>
+            <div class="usecase-tag">CostCut Pro</div>
+          </div>
+          <div class="usecase-body">
+            <div class="uc-line"><span class="uc-k">Vorher</span><span>Tickets landen unsortiert, Standardfragen blockieren, Eskalationen zu spät.</span></div>
+            <div class="uc-line"><span class="uc-k">Nachher</span><span>Kategorisierung, Priorisierung, Zuweisung, Antwortentwürfe für Standardfälle.</span></div>
+            <div class="uc-line"><span class="uc-k">Ergebnis</span><span>Schnellere Reaktion, weniger Liegezeit, SLA stabiler.</span></div>
+          </div>
+        </div>
+
+        <div class="usecase">
+          <div class="usecase-head">
+            <div class="usecase-title">Vertrieb: Anfrage → CRM → Termin</div>
+            <div class="usecase-tag">CostCut Basic</div>
+          </div>
+          <div class="usecase-body">
+            <div class="uc-line"><span class="uc-k">Vorher</span><span>Leads werden manuell übertragen, Follow-up fällt aus, Daten doppelt.</span></div>
+            <div class="uc-line"><span class="uc-k">Nachher</span><span>Automatische Qualifizierung, CRM-Eintrag, Aufgaben, Reminder, Statuslogik.</span></div>
+            <div class="uc-line"><span class="uc-k">Ergebnis</span><span>Weniger Admin-Zeit, sauberer Prozess, bessere Pipeline-Transparenz.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px">
+        <h3>Sie möchten ein echtes Beispiel aus Ihrem Betrieb?</h3>
+        <div style="color:rgba(191,217,255,.88);line-height:1.6;margin-top:8px">
+          Beschreiben Sie den Prozess in 5 Sätzen. Wir sagen Ihnen, wo der größte Kostentreiber sitzt und was automatisierbar ist.
+        </div>
+        <div style="margin-top:14px">
+          <a class="btn primary" href="./kontakt.html">Projekt anfragen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
+      <span>© 2026 Can Yenigün – Flowix Solutions · <a class="link" href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></span>
+      <span><a class="link" href="impressum.html">Impressum</a> · <a class="link" href="datenschutz.html">Datenschutz</a></span>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    const bar = document.querySelector('.subnav');
+    if (!bar) return;
+    let lastY = window.scrollY;
+    let ticking = false;
+    function update() {
+      const y = window.scrollY;
+      if (y > lastY && y > 120) bar.classList.add('hidden');
+      else bar.classList.remove('hidden');
+      lastY = y;
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+  })();
+  </script>
+
+</body>
+</html>
