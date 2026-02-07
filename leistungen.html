@@ -4,131 +4,81 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Leistungen – Flowix Solutions</title>
-  <meta name="description" content="Leistungen von Flowix Solutions: Prozesskosten senken durch robuste Automatisierung, Integrationen, KI-gestützte Abläufe und Betrieb.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=nav2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=fs-new">
 </head>
 <body>
 
-  <div class="container">
-    <header aria-label="Header">
-      <div class="logo">
-        <a href="./index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit">
-          <img alt="Flowix Solutions Logo" src="./flowix-logo.png"/>
-          <span>Flowix Solutions</span>
-        </a>
-      </div>
-    </header>
+<header class="topbar" id="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="./index.html"><img src="./flowix-logo.png" class="brand-logo" alt="Flowix Logo"><span class="brand-name">Flowix Solutions</span></a>
+    <nav class="nav">
+      <a href="./leistungen.html">Leistungen</a>
+      <a href="./pakete.html">Pakete</a>
+      <a href="./branchen.html">Branchen</a>
+      <a href="./case-studies.html">Case Studies</a>
+      <a href="./ueber-uns.html">Über uns</a>
+      <a href="./kontakt.html">Kontakt</a>
+      <a class="nav-cta" href="./kontakt.html">Projekt anfragen</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <a href="./leistungen.html">Leistungen</a><a href="./pakete.html">Pakete</a><a href="./branchen.html">Branchen</a>
+    <a href="./case-studies.html">Case Studies</a><a href="./ueber-uns.html">Über uns</a><a href="./kontakt.html">Kontakt</a>
+    <a href="./kontakt.html">Projekt anfragen</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="pagehead">
+    <div class="kicker">Leistungen</div>
+    <h1>Was wir automatisieren.</h1>
+    <p>Wir bauen Workflows, die Systeme verbinden und Abläufe zuverlässig ausführen – mit sauberem Fehlerhandling und klaren Übergaben.</p>
   </div>
 
-  <div class="subnav" role="navigation" aria-label="Hauptnavigation">
-    <div class="container subnav-inner">
-      <div class="subnav-links">
-        <a href="./leistungen.html">Leistungen</a>
-        <a href="./pakete.html">Pakete</a>
-        <a href="./branchen.html">Branchen</a>
-        <a href="./case-studies.html">Case Studies</a>
-        <a href="./ueber-uns.html">Über uns</a>
-        <a href="./kontakt.html">Kontakt</a>
+  <section class="section-tight">
+    <div class="grid">
+      <div class="card">
+        <h3>Lead- & Vertriebsautomatisierung</h3>
+        <p>Formulare/E-Mails → Qualifizierung → CRM → Aufgaben → Terminlogik → Follow-up.</p>
       </div>
-      <a class="btn primary subnav-cta" href="./kontakt.html">Projekt anfragen</a>
-    </div>
-  </div>
-
-  <section class="hero" style="padding:84px 0 40px">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-hud" aria-hidden="true"></div>
-
-    <div class="container">
-      <div class="kicker">Leistungen</div>
-      <h1>Automatisierung, die Prozesskosten senkt.</h1>
-      <p class="lead">Vier Bausteine – modular kombinierbar. Immer mit Dokumentation und sauberer Übergabe.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="container">
-      <div class="grid feature-grid">
-        <div class="card span6" style="grid-column:span 6">
-          <h3>Workflow-Automatisierung</h3>
-          <p class="lead compact" style="margin-top:8px">
-            Wiederkehrende Abläufe werden zu stabilen Prozessen: Input → Prüfung → Entscheidung → Output.
-          </p>
-          <div style="margin-top:14px;color:rgba(191,217,255,.88);line-height:1.55">
-            Typisch: Lead-Verarbeitung, Support-Tickets, Dokumentenflüsse, Freigaben, Erinnerungen, Datenpflege.
-          </div>
-        </div>
-
-        <div class="card span6" style="grid-column:span 6">
-          <h3>Integrationen & Schnittstellen</h3>
-          <p class="lead compact" style="margin-top:8px">
-            Systeme verbinden, Daten sauber halten, doppelte Pflege eliminieren.
-          </p>
-          <div style="margin-top:14px;color:rgba(191,217,255,.88);line-height:1.55">
-            CRM, E-Mail, Kalender, Ticketing, Dateiablage, ERP/Tools – inklusive Validierung und Fehlerhandling.
-          </div>
-        </div>
-
-        <div class="card span6" style="grid-column:span 6">
-          <h3>KI-gestützte Abläufe</h3>
-          <p class="lead compact" style="margin-top:8px">
-            Klassifizieren, priorisieren, zusammenfassen, Entwürfe erstellen – kontrolliert und nachvollziehbar.
-          </p>
-          <div style="margin-top:14px;color:rgba(191,217,255,.88);line-height:1.55">
-            Typisch: Support-Antwortentwürfe, Ticket-Routing, Dokumentenextraktion, interne Assistenz in Prozessen.
-          </div>
-        </div>
-
-        <div class="card span6" style="grid-column:span 6">
-          <h3>Betrieb, Monitoring & Übergabe</h3>
-          <p class="lead compact" style="margin-top:8px">
-            Stabiler Betrieb statt Bastellösung: Monitoring, Logs, Alarmierung, klare Übergabe.
-          </p>
-          <div style="margin-top:14px;color:rgba(191,217,255,.88);line-height:1.55">
-            Optionaler Betrieb durch Flowix oder Übergabe an Ihr Team – mit Dokumentation, Runbook und Zuständigkeiten.
-          </div>
-        </div>
+      <div class="card">
+        <h3>Support & Ticketing</h3>
+        <p>Inbox → Ticket → Priorität → Routing → Antwortentwurf → Status & Historie.</p>
       </div>
-
-      <div class="card" style="margin-top:18px">
-        <h3>Wie wir arbeiten</h3>
-        <div style="color:rgba(191,217,255,.88);line-height:1.6;margin-top:8px">
-          Diagnose → Umsetzung → Betrieb. Vor Projektstart definieren wir Messpunkte (Zeit, Fehler, Durchlaufzeit).
-          So wird „Automatisierung“ messbar und intern argumentierbar.
-        </div>
-        <div style="margin-top:14px">
-          <a class="btn primary" href="./kontakt.html">Projekt anfragen</a>
-          <a class="btn ghost" href="./pakete.html" style="margin-left:10px">Pakete ansehen</a>
-        </div>
+      <div class="card">
+        <h3>Backoffice & Dokumente</h3>
+        <p>Rechnung/Vertrag → Benennung → Ablage → Freigabe → Fristen/Reminder → Export.</p>
+      </div>
+      <div class="card">
+        <h3>System-Integrationen</h3>
+        <p>APIs, Webhooks, Datenmodelle – damit Informationen da landen, wo sie hingehören.</p>
+      </div>
+      <div class="card">
+        <h3>Monitoring & Betrieb</h3>
+        <p>Live-Status, Fehler-Alerts, Retries, SLA-Ansätze – optional als laufender Service.</p>
+      </div>
+      <div class="card">
+        <h3>KI-Module dort, wo es Sinn macht</h3>
+        <p>Klassifikation, Extraktion, Entwürfe – aber nur, wenn der Prozess dadurch wirklich besser wird.</p>
       </div>
     </div>
   </section>
+</main>
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-      <span>© 2026 Can Yenigün – Flowix Solutions · <a class="link" href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></span>
-      <span><a class="link" href="impressum.html">Impressum</a> · <a class="link" href="datenschutz.html">Datenschutz</a></span>
-    </div>
-  </footer>
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>© 2026 Can Yenigün – Flowix Solutions · <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></div>
+    <div><a href="./impressum.html">Impressum</a> · <a href="./datenschutz.html">Datenschutz</a></div>
+  </div>
+</footer>
 
-  <script>
-  (function () {
-    const bar = document.querySelector('.subnav');
-    if (!bar) return;
-    let lastY = window.scrollY;
-    let ticking = false;
-    function update() {
-      const y = window.scrollY;
-      if (y > lastY && y > 120) bar.classList.add('hidden');
-      else bar.classList.remove('hidden');
-      lastY = y;
-      ticking = false;
-    }
-    window.addEventListener('scroll', () => {
-      if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
-    }, { passive: true });
-  })();
-  </script>
-
+<script>
+  (function(){const bar=document.getElementById('topbar');let lastY=scrollY,t=false;addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{const y=scrollY;y>lastY&&y>120?bar.classList.add('hidden'):bar.classList.remove('hidden');lastY=y;t=false});t=true}}, {passive:true});})();
+  (function(){const b=document.getElementById('navToggle'),m=document.getElementById('mobileNav');if(!b||!m)return;b.addEventListener('click',()=>{const o=!m.hasAttribute('hidden');o?(m.setAttribute('hidden',''),b.setAttribute('aria-expanded','false')):(m.removeAttribute('hidden'),b.setAttribute('aria-expanded','true'))});})();
+</script>
 </body>
 </html>
