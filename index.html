@@ -1,266 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Flowix Solutions – Automatisierung, die für Sie arbeitet</title>
-  <meta name="description" content="Flowix Solutions automatisiert Abläufe: Systeme verbinden, Workflows bauen, Support und Backoffice entlasten.">
+  <meta name="description" content="Flowix Solutions automatisiert Abläufe in Unternehmen: Systeme verbinden, Prozesse beschleunigen, Fehler reduzieren." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=fs-new">
+  <link rel="stylesheet" href="./styles.css?v=light-enterprise-1">
 </head>
-
 <body>
 
-  <header class="topbar" id="topbar">
+  <!-- Topbar -->
+  <header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="./index.html">
-        <img src="./flowix-logo.png" alt="Flowix Solutions Logo" class="brand-logo">
+      <a class="brand" href="./index.html" aria-label="Startseite">
+        <img src="./flowix-logo.png" alt="Flowix Solutions Logo">
         <span class="brand-name">Flowix Solutions</span>
       </a>
 
-      <nav class="nav" aria-label="Navigation">
+      <nav class="nav" aria-label="Hauptnavigation">
         <a href="./leistungen.html">Leistungen</a>
         <a href="./pakete.html">Pakete</a>
         <a href="./branchen.html">Branchen</a>
         <a href="./case-studies.html">Case Studies</a>
         <a href="./ueber-uns.html">Über uns</a>
         <a href="./kontakt.html">Kontakt</a>
-        <a class="nav-cta" href="./kontakt.html">Projekt anfragen</a>
       </nav>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-
-    <div class="mobile-nav" id="mobileNav" hidden>
-      <a href="./leistungen.html">Leistungen</a>
-      <a href="./pakete.html">Pakete</a>
-      <a href="./branchen.html">Branchen</a>
-      <a href="./case-studies.html">Case Studies</a>
-      <a href="./ueber-uns.html">Über uns</a>
-      <a href="./kontakt.html">Kontakt</a>
-      <a href="./kontakt.html">Projekt anfragen</a>
+      <a class="btn btn-solid" href="./kontakt.html">Projekt anfragen</a>
     </div>
   </header>
 
   <!-- HERO -->
-  <main class="hero">
-    <div class="wrap">
-      <div class="hero-card">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-glow" aria-hidden="true"></div>
+  <main>
+    <section class="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-wave" aria-hidden="true"></div>
 
-        <div class="hero-inner">
-          <div>
-            <div class="kicker">Automatisierungstechnik</div>
-            <h1>Automatisierung, die für Sie arbeitet.</h1>
-            <p class="lead">
-              Wir verbinden Ihre Systeme und bauen Workflows, die Zeit sparen, Fehler reduzieren
-              und Abläufe stabil halten – vom ersten Lead bis zur sauberen Ablage.
-            </p>
+      <div class="wrap hero-inner">
+        <div class="hero-copy">
+          <div class="hero-kicker">AUTOMATISIERUNGSTECHNIK</div>
+          <h1>Automatisierung, die für Sie arbeitet.</h1>
+          <p class="hero-lead">
+            Wir verbinden Ihre Systeme und bauen Workflows, die Zeit sparen,
+            Fehler reduzieren und Abläufe stabil halten.
+          </p>
 
-            <div class="hero-actions">
-              <a class="btn primary" href="./kontakt.html">Projekt anfragen</a>
-              <a class="btn ghost" href="./pakete.html">Pakete ansehen</a>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="./kontakt.html">Projekt anfragen</a>
+            <a class="btn btn-ghost" href="./pakete.html">Pakete ansehen</a>
+          </div>
+
+          <div class="hero-chips" aria-label="Kurzvorteile">
+            <div class="chip"><span class="dot"></span> Start in Tagen, nicht Monaten</div>
+            <div class="chip"><span class="dot"></span> Dokumentation & Übergabe</div>
+            <div class="chip"><span class="dot"></span> Betrieb optional</div>
+          </div>
+        </div>
+
+        <!-- Rechter Hero-Block wie im Referenzbild -->
+        <div class="hero-visual" aria-label="Hero Visual">
+          <div class="hero-visual-glow" aria-hidden="true"></div>
+
+          <div class="mock">
+            <div class="mock-top">
+              <div class="mock-title">Workflow Dashboard</div>
+              <div class="mock-pill">LIVE</div>
             </div>
 
-            <div class="hero-badges" aria-label="Vorteile">
-              <span class="badge"><span class="dot"></span> Start in Tagen, nicht Monaten</span>
-              <span class="badge"><span class="dot"></span> Dokumentation & Übergabe</span>
-              <span class="badge"><span class="dot"></span> Betrieb optional</span>
+            <div class="mock-kpis">
+              <div class="kpi">
+                <div class="kpi-label">Automatisierte Schritte</div>
+                <div class="kpi-value">128 / Tag</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-label">Fehlerquote</div>
+                <div class="kpi-value">0.3%</div>
+              </div>
+              <div class="kpi">
+                <div class="kpi-label">Zeitersparnis</div>
+                <div class="kpi-value">~6.2h/W</div>
+              </div>
+            </div>
+
+            <div class="mock-flow">
+              <span class="tag">Lead</span><span class="arr">→</span>
+              <span class="tag">Qualifizierung</span><span class="arr">→</span>
+              <span class="tag">CRM</span><span class="arr">→</span>
+              <span class="tag">Termin</span><span class="arr">→</span>
+              <span class="tag">Follow-up</span>
+              <div class="mock-meta">Logging · Fehlerhandling · Audit Trail · Dokumentation</div>
+            </div>
+
+            <div class="mock-list">
+              <div class="row">
+                <span class="b"></span>
+                <div>
+                  <div class="t">Lead verarbeitet</div>
+                  <div class="s">CRM-Record + Owner gesetzt</div>
+                </div>
+                <div class="time">vor 2 Min</div>
+              </div>
+              <div class="row">
+                <span class="b"></span>
+                <div>
+                  <div class="t">Ticket priorisiert</div>
+                  <div class="s">Kategorie: „Wichtig“</div>
+                </div>
+                <div class="time">vor 7 Min</div>
+              </div>
+              <div class="row">
+                <span class="b"></span>
+                <div>
+                  <div class="t">Fallback aktiv</div>
+                  <div class="s">Schnittstelle langsam, Retry geplant</div>
+                </div>
+                <div class="time">vor 12 Min</div>
+              </div>
             </div>
           </div>
 
-          <!-- The “circled” holo dashboard look -->
-          <div style="position:relative">
-            <div class="holo">
-              <div class="ui-top">
-                <div class="ui-title">Workflow Dashboard</div>
-                <div class="ui-pill">LIVE</div>
-              </div>
-
-              <div class="ui-kpis">
-                <div class="kpi">
-                  <div class="kpi-label">Automatisierte Schritte</div>
-                  <div class="kpi-value">128 / Tag</div>
-                </div>
-                <div class="kpi">
-                  <div class="kpi-label">Fehlerquote</div>
-                  <div class="kpi-value">0.3%</div>
-                </div>
-                <div class="kpi">
-                  <div class="kpi-label">Zeitersparnis</div>
-                  <div class="kpi-value">~6.2h/W</div>
-                </div>
-              </div>
-
-              <div class="ui-flow">
-                <div class="flow-row">
-                  <span class="flow-tag">Lead</span><span class="flow-arrow">→</span>
-                  <span class="flow-tag">Qualifizierung</span><span class="flow-arrow">→</span>
-                  <span class="flow-tag">CRM</span><span class="flow-arrow">→</span>
-                  <span class="flow-tag">Termin</span><span class="flow-arrow">→</span>
-                  <span class="flow-tag">Follow-up</span>
-                </div>
-                <div class="ui-meta">Logging · Fehlerhandling · Audit Trail · Dokumentation</div>
-              </div>
-
-              <div class="ui-list">
-                <div class="ui-item">
-                  <span class="ui-bullet"></span>
-                  <div>
-                    <div class="ui-item-title">Lead verarbeitet</div>
-                    <div class="ui-item-sub">CRM-Record + Owner gesetzt</div>
-                  </div>
-                  <div class="ui-time">vor 2 Min</div>
-                </div>
-                <div class="ui-item">
-                  <span class="ui-bullet"></span>
-                  <div>
-                    <div class="ui-item-title">Ticket priorisiert</div>
-                    <div class="ui-item-sub">Kategorie: „Wichtig“</div>
-                  </div>
-                  <div class="ui-time">vor 7 Min</div>
-                </div>
-                <div class="ui-item">
-                  <span class="ui-bullet"></span>
-                  <div>
-                    <div class="ui-item-title">Fallback aktiv</div>
-                    <div class="ui-item-sub">Schnittstelle langsam, Retry geplant</div>
-                  </div>
-                  <div class="ui-time">vor 12 Min</div>
-                </div>
-              </div>
-            </div>
-            <div class="holo-ring" aria-hidden="true"></div>
-            <div class="holo-floor" aria-hidden="true"></div>
-          </div>
+          <div class="floor-ring" aria-hidden="true"></div>
         </div>
       </div>
+    </section>
 
-      <!-- Services band -->
-      <div class="band">
-        <div class="band-inner">
-          <div class="band-top">
-            <div>
-              <h2 class="band-title">Wofür Flowix genutzt wird</h2>
-              <p class="band-sub">Drei Bereiche, die in fast jedem Unternehmen sofort Wirkung zeigen.</p>
-            </div>
-            <a class="btn ghost" href="./leistungen.html">Alle Leistungen</a>
-          </div>
+    <!-- 3 Feature Cards auf hellem Bereich -->
+    <section class="section section-light">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Wofür Flowix genutzt wird</h2>
+          <p>3 Bereiche, die in fast jedem Unternehmen sofort Wirkung zeigen.</p>
+        </div>
 
-          <div class="services" id="services">
-            <div class="service">
-              <div class="ico" aria-hidden="true">
-                <!-- simple icon -->
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M7 17l10-10" stroke="rgba(234,243,255,.95)" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M7 7h10v10" stroke="rgba(234,243,255,.65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Systeme verbinden</h3>
-              <p>CRM, E-Mail, Kalender, Ticketing, Dateien, APIs – ein sauberer Datenfluss statt Copy-Paste.</p>
+        <div class="cards">
+          <article class="card">
+            <div class="icon">
+              <!-- simple inline icon -->
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10H7z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 4h4M16 4h4M4 20h4M16 20h4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
             </div>
+            <h3>Systeme verbinden</h3>
+            <p>CRM, E-Mail, Kalender, Ticketing, Datenbanken, APIs – sauberer Datenfluss statt Copy-Paste.</p>
+          </article>
 
-            <div class="service">
-              <div class="ico" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 2v4" stroke="rgba(234,243,255,.95)" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M6 6l3 3" stroke="rgba(234,243,255,.65)" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M18 6l-3 3" stroke="rgba(234,243,255,.65)" stroke-width="2" stroke-linecap="round"/>
-                  <path d="M7 13a5 5 0 1010 0" stroke="rgba(234,243,255,.95)" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-              </div>
-              <h3>Prozesse automatisieren</h3>
-              <p>Von Anfrage bis Abschluss: Routing, Status, Erinnerungen, Freigaben – zuverlässig im Hintergrund.</p>
+          <article class="card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v6l4 2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 12a9 9 0 1 1-9-9" fill="none" stroke="currentColor" stroke-width="2"/></svg>
             </div>
+            <h3>Prozesse automatisieren</h3>
+            <p>Von Anfrage bis Abschluss: Routing, Status, Erinnerungen, Freigaben – zuverlässig im Hintergrund.</p>
+          </article>
 
-            <div class="service">
-              <div class="ico" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                  <path d="M12 3l8 4v6c0 5-3.5 8-8 8s-8-3-8-8V7l8-4z" stroke="rgba(234,243,255,.95)" stroke-width="2" stroke-linejoin="round"/>
-                  <path d="M9 12l2 2 4-5" stroke="rgba(234,243,255,.85)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </div>
-              <h3>Stabil & sicher</h3>
-              <p>Fehlerhandling, Logging, klare Zuständigkeiten. Wartbar – damit es auch nach dem Go-Live läuft.</p>
+          <article class="card">
+            <div class="icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 4v6c0 5-3 9-8 10C7 21 4 17 4 12V6z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
             </div>
-          </div>
+            <h3>Stabil & sicher</h3>
+            <p>Fehlerhandling, Logging, klare Zuständigkeiten – damit es auch nach dem Go-Live läuft.</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <!-- Why -->
-      <section class="section why" id="why">
-        <div class="why-card">
-          <div class="why-inner">
-            <div class="kicker">Warum Flowix</div>
-            <h2>Automatisierung, die messbar entlastet.</h2>
-            <p>
-              Sie bekommen keine Show – sondern funktionierende Abläufe.
-              Wir liefern klare Ergebnisse: weniger manuelle Arbeit, weniger Fehler,
-              schnellere Reaktionszeiten und ein Setup, das Ihr Team versteht.
-            </p>
-            <a class="btn primary" href="./pakete.html">Pakete ansehen</a>
-          </div>
-        </div>
-      </section>
-
-    </div>
+    <!-- Mid CTA Banner wie im Bild -->
+    <section class="cta">
+      <div class="cta-wave" aria-hidden="true"></div>
+      <div class="wrap cta-inner">
+        <h2>Warum Flowix Solutions?</h2>
+        <p>Weil Automatisierung nicht hübsch aussehen muss – sondern stabil laufen und Ergebnisse liefern.</p>
+        <a class="btn btn-solid btn-lg" href="./kontakt.html">Projekt starten</a>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="footer">
     <div class="wrap footer-inner">
-      <div>© 2026 Can Yenigün – Flowix Solutions · <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></div>
-      <div>
-        <a href="./impressum.html">Impressum</a> · <a href="./datenschutz.html">Datenschutz</a>
+      <div class="footer-left">
+        <img src="./flowix-logo.png" alt="Flowix Solutions">
+        <div>
+          <div class="footer-brand">Flowix Solutions</div>
+          <div class="footer-sub">Automatisierung, die für Sie arbeitet.</div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+        <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
       </div>
     </div>
   </footer>
 
-  <script>
-    // header hide on scroll (desktop + mobile)
-    (function(){
-      const bar = document.getElementById('topbar');
-      if(!bar) return;
-      let lastY = window.scrollY;
-      let ticking = false;
-
-      function update(){
-        const y = window.scrollY;
-        if (y > lastY && y > 120) bar.classList.add('hidden');
-        else bar.classList.remove('hidden');
-        lastY = y;
-        ticking = false;
-      }
-
-      window.addEventListener('scroll', () => {
-        if(!ticking){
-          requestAnimationFrame(update);
-          ticking = true;
-        }
-      }, {passive:true});
-    })();
-
-    // mobile menu toggle
-    (function(){
-      const btn = document.getElementById('navToggle');
-      const menu = document.getElementById('mobileNav');
-      if(!btn || !menu) return;
-
-      btn.addEventListener('click', () => {
-        const isOpen = !menu.hasAttribute('hidden');
-        if(isOpen){
-          menu.setAttribute('hidden','');
-          btn.setAttribute('aria-expanded','false');
-        } else {
-          menu.removeAttribute('hidden');
-          btn.setAttribute('aria-expanded','true');
-        }
-      });
-    })();
-  </script>
 </body>
 </html>
