@@ -1,107 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
   <title>Kontakt – Flowix Solutions</title>
-  <meta name="description" content="Kontakt: Projektanfrage an Flowix Solutions. Beschreiben Sie Prozess, Systeme und Ziel – wir melden uns mit Rückfragen oder Terminvorschlag.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=nav2">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Projekt anfragen – Flowix Solutions.">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <div class="container">
-    <header aria-label="Header">
-      <div class="logo">
-        <a href="./index.html" style="display:flex;align-items:center;gap:10px;text-decoration:none;color:inherit">
-          <img alt="Flowix Solutions Logo" src="./flowix-logo.png"/>
-          <span>Flowix Solutions</span>
-        </a>
-      </div>
-    </header>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="./index.html">
+      <img src="./flowix-logo.png" alt="Flowix Logo">
+      <span class="brand-name">Flowix Solutions</span>
+    </a>
+    <nav class="nav">
+      <a href="./leistungen.html">Leistungen</a>
+      <a href="./pakete.html">Pakete</a>
+      <a href="./branchen.html">Branchen</a>
+      <a href="./beispiele.html">Beispiele</a>
+      <a href="./ueber-uns.html">Über uns</a>
+      <a class="active" href="./kontakt.html">Kontakt</a>
+    </nav>
+    <a class="btn btn-solid" href="./kontakt.html">Projekt anfragen</a>
   </div>
+</header>
 
-  <div class="subnav" role="navigation" aria-label="Hauptnavigation">
-    <div class="container subnav-inner">
-      <div class="subnav-links">
-        <a href="./leistungen.html">Leistungen</a>
-        <a href="./pakete.html">Pakete</a>
-        <a href="./branchen.html">Branchen</a>
-        <a href="./case-studies.html">Case Studies</a>
-        <a href="./ueber-uns.html">Über uns</a>
-        <a href="./kontakt.html">Kontakt</a>
-      </div>
-      <a class="btn primary subnav-cta" href="./kontakt.html">Projekt anfragen</a>
-    </div>
-  </div>
+<main>
 
-  <section class="hero" style="padding:84px 0 40px">
-    <div class="hero-bg" aria-hidden="true"></div>
-    <div class="hero-hud" aria-hidden="true"></div>
-
-    <div class="container">
+<section class="hero hero-small">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
       <div class="kicker">Kontakt</div>
       <h1>Projekt anfragen</h1>
-      <p class="lead">Kurz beschreiben: Prozess, Systeme, Ziel. Wir melden uns mit Rückfragen oder einem Terminvorschlag.</p>
+      <p class="lead">Kurz Prozess + Systeme + Ziel. Wir melden uns mit Rückfragen oder Terminvorschlag.</p>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="contact-section" style="padding-top:20px">
-    <div class="container">
+<section class="section section-light">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="contact-top">
+        <h2>Direkt starten</h2>
+        <p class="muted">Unverbindlich. Kein Vertragsschluss über die Website.</p>
+      </div>
+
       <div class="contact-actions">
-        <a class="btn ghost" href="mailto:info@flowixsolutions.de?subject=Projektanfrage%20Flowix%20Solutions&body=Name%3A%20%0AFirma%3A%20%0A%0AProzess%3A%20%0ASysteme%3A%20%0AZiel%3A%20%0A">
+        <a class="btn btn-ghost" href="mailto:info@flowixsolutions.de?subject=Projektanfrage%20Flowix%20Solutions&body=Name%3A%20%0AFirma%3A%20%0A%0AProzess%3A%20%0ASysteme%3A%20%0AZiel%3A%20%0A">
           Direkt per E-Mail anfragen
         </a>
       </div>
 
-      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+      <form action="https://api.web3forms.com/submit" method="POST" class="form">
         <input type="hidden" name="access_key" value="78b364b6-1245-4f78-a761-f2df53b3770c">
-        <input type="hidden" name="replyto" value="info@flowixsolutions.de">
-        <input type="hidden" name="from_name" value="Flowix Website">
         <input type="hidden" name="redirect" value="https://flowixsolutions.de/danke.html">
 
-        <div class="grid form-row">
-          <input class="span4" type="text" name="name" placeholder="Name" required>
-          <input class="span8" type="email" name="email" placeholder="E-Mail" required>
+        <div class="form-grid">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="E-Mail" required>
         </div>
 
         <input type="text" name="company" placeholder="Unternehmen (optional)">
         <textarea name="message" rows="6" placeholder="Kurzbeschreibung: Prozess, Systeme, Ziel" required></textarea>
 
-        <button type="submit" class="btn primary">Anfrage senden</button>
+        <button class="btn btn-solid" type="submit">Anfrage senden</button>
 
-        <p class="form-note">
+        <p class="muted small">
           Mit dem Absenden erklären Sie sich mit der Verarbeitung Ihrer Angaben gemäß Datenschutzerklärung einverstanden.
         </p>
       </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px">
-      <span>© 2026 Can Yenigün – Flowix Solutions · <a class="link" href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></span>
-      <span><a class="link" href="impressum.html">Impressum</a> · <a class="link" href="datenschutz.html">Datenschutz</a></span>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="footer-left">
+      <img src="./flowix-logo.png" alt="">
+      <div>
+        <div class="footer-brand">Flowix Solutions</div>
+        <div class="footer-sub">Automatisierung, die für Sie arbeitet.</div>
+      </div>
     </div>
-  </footer>
-
-  <script>
-  (function () {
-    const bar = document.querySelector('.subnav');
-    if (!bar) return;
-    let lastY = window.scrollY;
-    let ticking = false;
-    function update() {
-      const y = window.scrollY;
-      if (y > lastY && y > 120) bar.classList.add('hidden');
-      else bar.classList.remove('hidden');
-      lastY = y;
-      ticking = false;
-    }
-    window.addEventListener('scroll', () => {
-      if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
-    }, { passive: true });
-  })();
-  </script>
+    <div class="footer-links">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+      <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
