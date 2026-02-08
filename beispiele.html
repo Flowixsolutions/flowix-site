@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beispiele – Flowix Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=refA1">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="./index.html" style="text-decoration:none">
+      <img src="./flowix-logo.png" alt="Flowix Solutions Logo">
+      <span class="brand-name">Flowix Solutions</span>
+    </a>
+    <nav class="nav">
+      <a href="./index.html">Start</a>
+      <a href="./leistungen.html">Leistungen</a>
+      <a href="./pakete.html">Pakete</a>
+      <a href="./branchen.html">Branchen</a>
+      <a class="active" href="./beispiele.html">Beispiele</a>
+      <a href="./ueber-uns.html">Über uns</a>
+      <a href="./kontakt.html">Kontakt</a>
+    </nav>
+    <a class="cta" href="./kontakt.html">Projekt anfragen</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Beispiele</h1>
+    <p>Kurze, nachvollziehbare Beispiele – damit Sie sofort ein Gefühl für den Nutzen bekommen.</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <div class="block">
+      <h2>Beispiel 1: Anfrage → CRM → Termin</h2>
+      <p>Platzhalter: Was passiert, welche Systeme, welcher Nutzen. (Sie ersetzen Details später.)</p>
+      <ul class="list">
+        <li>Input: Formular / E-Mail</li>
+        <li>Automatik: Qualifizierung, Routing, Aufgabe, Terminlogik</li>
+        <li>Output: CRM-Datensatz + Status + Follow-up</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Beispiel 2: Support-Inbox → Ticket → Priorität</h2>
+      <p>Platzhalter: Kategorisierung, Priorisierung, Entwurf – sauber dokumentiert.</p>
+      <ul class="list">
+        <li>Input: Support-E-Mails</li>
+        <li>Automatik: Ticket, SLA/Prio, Antwortentwurf</li>
+        <li>Output: Transparentes Handling + Verlauf</li>
+      </ul>
+    </div>
+
+    <div class="block">
+      <h2>Beispiel 3: Dokumente → Ablage → Freigabe</h2>
+      <p>Platzhalter: Standardisierte Ablage, Freigaben, Fristen – weniger Fehler.</p>
+      <ul class="list">
+        <li>Input: PDFs / Rechnungen</li>
+        <li>Automatik: Benennung, Ordnerlogik, Freigabe, Erinnerungen</li>
+        <li>Output: Saubere Ablage + Status</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="./flowix-logo.png" alt="Flowix Logo">
+        <div><strong>Flowix Solutions</strong><br><span style="color:rgba(233,243,255,.72);font-size:13px">Automatisierungstechnik</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+        <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Flowix Solutions</span><span><a href="./kontakt.html" style="color:rgba(233,243,255,.86)">Kontakt</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const bar = document.querySelector('.topbar');
+  if (!bar) return;
+  let lastY = window.scrollY, ticking=false;
+  function update(){const y=window.scrollY; if(y>lastY && y>140) bar.classList.add('hidden'); else bar.classList.remove('hidden'); lastY=y; ticking=false;}
+  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+})();
+</script>
+
+</body>
+</html>
