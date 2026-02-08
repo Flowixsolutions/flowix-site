@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Branchen – Flowix Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=refA1">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="./index.html" style="text-decoration:none">
+      <img src="./flowix-logo.png" alt="Flowix Solutions Logo">
+      <span class="brand-name">Flowix Solutions</span>
+    </a>
+    <nav class="nav">
+      <a href="./index.html">Start</a>
+      <a href="./leistungen.html">Leistungen</a>
+      <a href="./pakete.html">Pakete</a>
+      <a class="active" href="./branchen.html">Branchen</a>
+      <a href="./beispiele.html">Beispiele</a>
+      <a href="./ueber-uns.html">Über uns</a>
+      <a href="./kontakt.html">Kontakt</a>
+    </nav>
+    <a class="cta" href="./kontakt.html">Projekt anfragen</a>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Branchen</h1>
+    <p>Wir arbeiten branchenübergreifend – entscheidend sind Prozesse, Systeme und Datenflüsse.</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="container">
+    <div class="grid2">
+      <div class="block">
+        <h2>Dienstleistung</h2>
+        <p>Leads, Termine, Angebote, Follow-ups – sauber über CRM, E-Mail und Kalender.</p>
+      </div>
+      <div class="block">
+        <h2>Handel / E-Commerce</h2>
+        <p>Bestellungen, Rechnungen, Retouren, Lager-Updates – weniger manuelle Schritte.</p>
+      </div>
+      <div class="block">
+        <h2>Industrie / Produktion</h2>
+        <p>Statusmeldungen, Tickets, Dokumentation – stabil und nachvollziehbar.</p>
+      </div>
+      <div class="block">
+        <h2>Backoffice</h2>
+        <p>Dokumentablage, Freigaben, Fristen, Erinnerungen – standardisiert und transparent.</p>
+      </div>
+    </div>
+
+    <div class="block" style="margin-top:18px">
+      <h2>Ihr Bereich fehlt?</h2>
+      <p>Dann sind Sie wahrscheinlich trotzdem ein guter Fit. Entscheidend ist, ob bei Ihnen wiederkehrende Abläufe existieren.</p>
+      <div style="margin-top:14px">
+        <a class="btn btn-primary" href="./kontakt.html">Kontakt</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="./flowix-logo.png" alt="Flowix Logo">
+        <div><strong>Flowix Solutions</strong><br><span style="color:rgba(233,243,255,.72);font-size:13px">Automatisierungstechnik</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+        <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Flowix Solutions</span><span><a href="./kontakt.html" style="color:rgba(233,243,255,.86)">Kontakt</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  const bar = document.querySelector('.topbar');
+  if (!bar) return;
+  let lastY = window.scrollY, ticking=false;
+  function update(){const y=window.scrollY; if(y>lastY && y>140) bar.classList.add('hidden'); else bar.classList.remove('hidden'); lastY=y; ticking=false;}
+  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+})();
+</script>
+
+</body>
+</html>
