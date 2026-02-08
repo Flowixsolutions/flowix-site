@@ -1,21 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Über uns – Flowix Solutions</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Flowix Solutions: Automatisierung & Integration für KMU – pragmatisch, schnell, sauber umgesetzt.">
-  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=refA1">
 </head>
 <body>
 
-<header class="topbar">
-  <div class="wrap topbar-inner">
-    <a class="brand" href="./index.html">
-      <img src="./flowix-logo.png" alt="Flowix Logo">
+<div class="topbar">
+  <div class="container topbar-inner">
+    <a class="brand" href="./index.html" style="text-decoration:none">
+      <img src="./flowix-logo.png" alt="Flowix Solutions Logo">
       <span class="brand-name">Flowix Solutions</span>
     </a>
     <nav class="nav">
+      <a href="./index.html">Start</a>
       <a href="./leistungen.html">Leistungen</a>
       <a href="./pakete.html">Pakete</a>
       <a href="./branchen.html">Branchen</a>
@@ -23,66 +24,65 @@
       <a class="active" href="./ueber-uns.html">Über uns</a>
       <a href="./kontakt.html">Kontakt</a>
     </nav>
-    <a class="btn btn-solid" href="./kontakt.html">Projekt anfragen</a>
+    <a class="cta" href="./kontakt.html">Projekt anfragen</a>
   </div>
-</header>
+</div>
 
-<main>
-
-<section class="hero hero-small">
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <div class="kicker">Über uns</div>
-      <h1>Wir bauen Automatisierung, die im Alltag funktioniert.</h1>
-      <p class="lead">
-        Kein Buzzword-Bingo. Fokus auf Prozesse, Systeme und messbaren Effekt.
-      </p>
-    </div>
+<section class="page-hero">
+  <div class="container">
+    <h1>Über uns</h1>
+    <p>Kurzer, seriöser Überblick. Kein Marketing-Roman.</p>
   </div>
 </section>
 
-<section class="section section-light">
-  <div class="wrap">
-    <div class="split">
-      <div>
-        <h2>Wofür Flowix steht</h2>
-        <p class="muted">
-          Wir liefern schnelle, saubere Automatisierung – von der Idee bis zum laufenden Betrieb.
-        </p>
-        <div class="cards mini">
-          <div class="card"><h3>Pragmatisch</h3><p>Kein Theater. Nur Umsetzung.</p></div>
-          <div class="card"><h3>Sauber</h3><p>Klare Logik, nachvollziehbar.</p></div>
-          <div class="card"><h3>Effektiv</h3><p>Zeit sparen, Fehler runter, Stabilität hoch.</p></div>
-        </div>
+<section class="content">
+  <div class="container">
+    <div class="block">
+      <h2>Wofür wir stehen</h2>
+      <p>Platzhalter: 3–5 Sätze. Fokus: Zuverlässigkeit, saubere Umsetzung, verständliche Übergabe.</p>
+    </div>
+
+    <div class="grid2">
+      <div class="block">
+        <h2>Arbeitsweise</h2>
+        <p>Platzhalter: Diagnose → Umsetzung → Betrieb. Klare Outputs, klare Zuständigkeiten.</p>
       </div>
-      <div class="panel">
-        <h3>Kontakt</h3>
-        <p class="muted">Sie wollen wissen, was bei Ihnen automatisierbar ist?</p>
-        <a class="btn btn-solid mt" href="./kontakt.html">Projekt anfragen</a>
-        <div class="muted mt-sm">oder per Mail: <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></div>
+      <div class="block">
+        <h2>Technik-Grundsatz</h2>
+        <p>Platzhalter: Schnittstellen, Datenflüsse, Logging/Monitoring – wartbar und nachvollziehbar.</p>
       </div>
     </div>
   </div>
 </section>
-
-</main>
 
 <footer class="footer">
-  <div class="wrap footer-inner">
-    <div class="footer-left">
-      <img src="./flowix-logo.png" alt="">
-      <div>
-        <div class="footer-brand">Flowix Solutions</div>
-        <div class="footer-sub">Automatisierung, die für Sie arbeitet.</div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="./flowix-logo.png" alt="Flowix Logo">
+        <div><strong>Flowix Solutions</strong><br><span style="color:rgba(233,243,255,.72);font-size:13px">Automatisierungstechnik</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="./impressum.html">Impressum</a>
+        <a href="./datenschutz.html">Datenschutz</a>
+        <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
       </div>
     </div>
-    <div class="footer-links">
-      <a href="./impressum.html">Impressum</a>
-      <a href="./datenschutz.html">Datenschutz</a>
-      <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
+    <div class="footer-bottom">
+      <span>© 2026 Flowix Solutions</span><span><a href="./kontakt.html" style="color:rgba(233,243,255,.86)">Kontakt</a></span>
     </div>
   </div>
 </footer>
+
+<script>
+(function () {
+  const bar = document.querySelector('.topbar');
+  if (!bar) return;
+  let lastY = window.scrollY, ticking=false;
+  function update(){const y=window.scrollY; if(y>lastY && y>140) bar.classList.add('hidden'); else bar.classList.remove('hidden'); lastY=y; ticking=false;}
+  window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(update);ticking=true;}},{passive:true});
+})();
+</script>
 
 </body>
 </html>
