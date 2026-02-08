@@ -1,76 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
   <title>Pakete – Flowix Solutions</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css?v=fs-new">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Pakete für Automatisierung: Quick Win, Wachstum, Betrieb – transparent und planbar.">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-<header class="topbar" id="topbar">
+<header class="topbar">
   <div class="wrap topbar-inner">
-    <a class="brand" href="./index.html"><img src="./flowix-logo.png" class="brand-logo" alt="Flowix Logo"><span class="brand-name">Flowix Solutions</span></a>
+    <a class="brand" href="./index.html">
+      <img src="./flowix-logo.png" alt="Flowix Logo">
+      <span class="brand-name">Flowix Solutions</span>
+    </a>
     <nav class="nav">
-      <a href="./leistungen.html">Leistungen</a><a href="./pakete.html">Pakete</a><a href="./branchen.html">Branchen</a>
-      <a href="./case-studies.html">Case Studies</a><a href="./ueber-uns.html">Über uns</a><a href="./kontakt.html">Kontakt</a>
-      <a class="nav-cta" href="./kontakt.html">Projekt anfragen</a>
+      <a href="./leistungen.html">Leistungen</a>
+      <a class="active" href="./pakete.html">Pakete</a>
+      <a href="./branchen.html">Branchen</a>
+      <a href="./beispiele.html">Beispiele</a>
+      <a href="./ueber-uns.html">Über uns</a>
+      <a href="./kontakt.html">Kontakt</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="Menü öffnen" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-  <div class="mobile-nav" id="mobileNav" hidden>
-    <a href="./leistungen.html">Leistungen</a><a href="./pakete.html">Pakete</a><a href="./branchen.html">Branchen</a>
-    <a href="./case-studies.html">Case Studies</a><a href="./ueber-uns.html">Über uns</a><a href="./kontakt.html">Kontakt</a>
-    <a href="./kontakt.html">Projekt anfragen</a>
+    <a class="btn btn-solid" href="./kontakt.html">Projekt anfragen</a>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="pagehead">
-    <div class="kicker">Pakete</div>
-    <h1>Klare Pakete. Klare Ergebnisse.</h1>
-    <p>Sie wählen das passende Niveau: Einstieg, Ausbau oder laufender Betrieb.</p>
-  </div>
+<main>
 
-  <section class="section-tight">
-    <div class="grid">
-      <div class="card">
-        <h3>Starter</h3>
-        <p>Ein Workflow, der sofort entlastet. Ideal für Lead-Routing, Support-Routing oder Ablage.</p>
-      </div>
-      <div class="card">
-        <h3>Growth</h3>
-        <p>Mehrere Workflows + Integrationen. Für Teams, die spürbar Zeit zurückholen wollen.</p>
-      </div>
-      <div class="card">
-        <h3>Operate</h3>
-        <p>Monitoring + Optimierung + Anpassungen. Damit es nicht nur live geht, sondern bleibt.</p>
-      </div>
-
-      <div class="card span12">
-        <h3>Wie wir starten</h3>
-        <p>Kurze Aufnahme (Prozess, Systeme, Ziel) → Vorschlag → Umsetzung. Ohne Theater.</p>
-        <div style="margin-top:14px">
-          <a class="btn primary" href="./kontakt.html">Projekt anfragen</a>
-        </div>
-      </div>
+<section class="hero hero-small">
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <div class="kicker">Pakete</div>
+      <h1>Klare Pakete. Klare Ergebnisse.</h1>
+      <p class="lead">Sie wählen das Ziel – wir liefern den Workflow.</p>
     </div>
-  </section>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="wrap">
+    <div class="pricing">
+
+      <article class="price">
+        <div class="price-top">
+          <h3>Quick Win</h3>
+          <p class="muted">1 Workflow, schnell live.</p>
+        </div>
+        <ul class="list">
+          <li>1 Prozessautomatisierung</li>
+          <li>Integration in bestehende Systeme</li>
+          <li>Test + Go-live</li>
+          <li>Kurze Übergabe</li>
+        </ul>
+        <a class="btn btn-solid" href="./kontakt.html">Anfragen</a>
+      </article>
+
+      <article class="price price-featured">
+        <div class="badge">Empfohlen</div>
+        <div class="price-top">
+          <h3>Wachstum</h3>
+          <p class="muted">Mehrere Workflows + saubere Struktur.</p>
+        </div>
+        <ul class="list">
+          <li>2–4 Workflows</li>
+          <li>Fehlerhandling + Monitoring Setup</li>
+          <li>Dokumentation & Übergabe</li>
+          <li>Optimierung nach 14 Tagen</li>
+        </ul>
+        <a class="btn btn-solid" href="./kontakt.html">Anfragen</a>
+      </article>
+
+      <article class="price">
+        <div class="price-top">
+          <h3>Betrieb</h3>
+          <p class="muted">Laufender Betrieb & Weiterentwicklung.</p>
+        </div>
+        <ul class="list">
+          <li>Monitoring & Wartung</li>
+          <li>Änderungen & Erweiterungen</li>
+          <li>Priorisierte Reaktionszeit</li>
+          <li>Monatliches Reporting</li>
+        </ul>
+        <a class="btn btn-solid" href="./kontakt.html">Anfragen</a>
+      </article>
+
+    </div>
+
+    <div class="note">
+      <strong>Hinweis:</strong> Preise hängen von Systemen, Datenlage und Aufwand ab. Sie erhalten immer einen klaren Vorschlag vor Start.
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer class="footer">
   <div class="wrap footer-inner">
-    <div>© 2026 Can Yenigün – Flowix Solutions · <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a></div>
-    <div><a href="./impressum.html">Impressum</a> · <a href="./datenschutz.html">Datenschutz</a></div>
+    <div class="footer-left">
+      <img src="./flowix-logo.png" alt="">
+      <div>
+        <div class="footer-brand">Flowix Solutions</div>
+        <div class="footer-sub">Automatisierung, die für Sie arbeitet.</div>
+      </div>
+    </div>
+    <div class="footer-links">
+      <a href="./impressum.html">Impressum</a>
+      <a href="./datenschutz.html">Datenschutz</a>
+      <a href="mailto:info@flowixsolutions.de">info@flowixsolutions.de</a>
+    </div>
   </div>
 </footer>
 
-<script>
-  (function(){const bar=document.getElementById('topbar');let lastY=scrollY,t=false;addEventListener('scroll',()=>{if(!t){requestAnimationFrame(()=>{const y=scrollY;y>lastY&&y>120?bar.classList.add('hidden'):bar.classList.remove('hidden');lastY=y;t=false});t=true}}, {passive:true});})();
-  (function(){const b=document.getElementById('navToggle'),m=document.getElementById('mobileNav');if(!b||!m)return;b.addEventListener('click',()=>{const o=!m.hasAttribute('hidden');o?(m.setAttribute('hidden',''),b.setAttribute('aria-expanded','false')):(m.removeAttribute('hidden'),b.setAttribute('aria-expanded','true'))});})();
-</script>
 </body>
 </html>
