@@ -19,8 +19,7 @@ Wichtig vor Livegang:
 
 Kontakt aktuell:
 Flowix Solutions
-Uhuweg 37
-70794 Filderstadt
-Deutschland
-info@flowixsolutions.de
+Standort: Filderstadt, Deutschland
+E-Mail: info@flowixsolutions.de
 Inhaber: Can Yenigün
+Die vollständige ladungsfähige Anschrift steht ausschließlich im Impressum und in der Datenschutzerklärung.

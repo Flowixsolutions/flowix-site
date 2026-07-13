@@ -12,12 +12,13 @@ GEPRÜFT
 - Bilder mit Alt-Text und festen Abmessungen geprüft: 33
 - Interne Datei- und Linkreferenzen geprüft: 314
 - Ursprüngliche Assets bytegenau geprüft: 16
-- Ursprüngliche sichtbare Texte auf vollständige Bewahrung geprüft
+- Ursprüngliche sichtbare Texte mit Ausnahme der ausdrücklich gewünschten Adressbereinigung geprüft
 - Offizielles Logo auf Bytegleichheit mit dem Upload geprüft
 - Meta-Titles, Meta-Descriptions und Canonicals auf Vorhandensein und Eindeutigkeit geprüft
 - JSON, XML, Manifest und Icon-Abmessungen geprüft
 - Sichtbare FAQ-Fragen mit FAQPage-Strukturdaten abgeglichen
 - HTML mit html-validate geprüft
+- Private Straßenanschrift außerhalb der rechtlich vorgesehenen Inhalte entfernt
 
 HINWEIS ZU LIGHTHOUSE
 Ein lokaler Chromium-Lighthouse-Lauf konnte in der isolierten Container-Umgebung nicht zuverlässig navigieren. Deshalb werden keine erfundenen Performance-, SEO-, Best-Practices- oder Accessibility-Scores ausgewiesen. Die statischen Voraussetzungen wurden geprüft; reale Werte müssen nach dem Live-Deployment gegen die öffentliche URL gemessen werden.

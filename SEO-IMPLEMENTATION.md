@@ -7,7 +7,7 @@ Stand: 2026-07-13
 - Einzigartige Meta-Titles und Meta-Descriptions für alle Seiten
 - Self-referencing Canonicals, Robots-Meta-Tags und `noindex` für die Danke-Seite
 - Open Graph und Twitter Cards mit dem unveränderten offiziellen Unternehmenslogo
-- JSON-LD als `@graph` mit Organization, LocalBusiness, WebSite, WebPage, ImageObject, Service, BreadcrumbList und FAQPage
+- JSON-LD als `@graph` mit Organization, WebSite, WebPage, ImageObject, Service, BreadcrumbList und FAQPage; regionale Relevanz wird datensparsam über `areaServed` abgebildet
 - Sichtbarer regionaler SEO-Bereich und FAQ-Bereich am Ende der Startseite
 - `robots.txt`, `sitemap.xml`, `manifest.webmanifest`, `browserconfig.xml`, `humans.txt`, `llms.txt` und `.well-known/security.txt`
 - Favicons, Apple-Touch-Icon, Android-Icons und Microsoft-Tile-Icon
@@ -15,6 +15,7 @@ Stand: 2026-07-13
 - Semantische und barrierearme Ergänzungen: Skip-Link, Fokusdarstellung, ARIA-Zustände, Formular-Autocomplete und reduzierte Bewegung
 - Vercel-Header für Sicherheit und Browser-Caching
 - Interne Verlinkung aus dem neuen regionalen SEO-Bereich
+- Private Straßenanschrift aus Footern, README und strukturierten Daten entfernt; sie bleibt nur in den rechtlich vorgesehenen Inhalten von Impressum und Datenschutzerklärung
 
 ## Nicht automatisch möglich
 
