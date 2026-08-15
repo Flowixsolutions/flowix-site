@@ -1,0 +1,14 @@
+FLOWIX SOLUTIONS – GitHub Upload
+
+Diese Version verwendet absichtlich nur EINEN flachen assets-Ordner.
+Es gibt keine Unterordner wie products-cutout, responsive oder icons.
+Außerdem wurden srcset-Verweise entfernt, damit GitHub/Vercel keine nicht hochgeladenen Bilder anfordert.
+
+Am einfachsten:
+1. Im Repository die bisherigen Website-Dateien ersetzen.
+2. Den bisherigen assets-Ordner auf GitHub löschen.
+3. Einen neuen Ordner assets anlegen bzw. assets öffnen.
+4. ALLE Dateien aus diesem assets-Ordner hochladen.
+5. Committen und Vercel neu deployen.
+
+Keine Texte wurden für diesen Fix inhaltlich geändert.
