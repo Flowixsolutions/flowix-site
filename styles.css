@@ -15,3 +15,101 @@
 .legal-main{padding-top:82px}.legal-main .page-hero{padding-top:0}.legal-main .page-hero .container{width:min(960px,calc(100% - 48px));margin:auto;padding:80px 0}.legal-main .page-hero h1{font-size:clamp(42px,5vw,72px);margin:0 0 12px;letter-spacing:-.045em}.legal-main .section.legal{background:#fff;padding:90px 0}.legal-main .container.narrow,.legal-main .privacy-container{width:min(900px,calc(100% - 48px));margin:auto}.legal-main .legal h2,.legal-main .content h2{font-size:24px;margin-top:44px}.legal-main .legal p,.legal-main .content p,.legal-main .content li{color:#5f5b54}.legal-main .privacy-container{background:#fff;padding:60px 70px;margin-top:70px;margin-bottom:70px;box-shadow:var(--shadow)}.legal-main .privacy-container .header{margin-bottom:45px}.legal-main .privacy-container .brand{display:none}.legal-main .privacy-container h1{font-size:50px;margin:0 0 10px}.legal-main .privacy-container .subtitle{color:var(--muted)}.legal-main .info-box{background:#f3eee6;padding:22px;border-left:2px solid var(--gold)}.legal-main a{color:#7f6138;text-decoration:underline}.legal-main .btn{text-decoration:none}.legal-main .page-hero .actions{margin-top:25px}
 @media(max-width:1050px){.desktop-nav{display:none}.phone-link{display:none}.menu-toggle{display:block}.mobile-nav.open{display:flex;flex-direction:column;padding:16px 24px 24px;background:#0d0d0c;border-top:1px solid rgba(255,255,255,.08)}.mobile-nav a{padding:11px 0;color:#ddd}.hero-grid{grid-template-columns:1fr;min-height:auto}.hero-copy{padding:100px 0 20px}.hero-stage{height:500px;width:min(700px,100%);margin:auto}.hero-product-main{width:560px}.trust-grid{grid-template-columns:1fr 1fr}.product-showcase{grid-template-columns:1fr 1.2fr}.showcase-rail{display:none}.split-editorial,.partner-grid,.faq-layout,.process-grid,.value-grid,.founder-grid,.contact-layout{grid-template-columns:1fr;gap:55px}.faq-layout>div:first-child{position:static}.product-grid{grid-template-columns:1fr 1fr}.service-grid,.branch-grid{grid-template-columns:1fr 1fr}.included-grid,.principle-grid{grid-template-columns:1fr 1fr}.product-hero .page-hero-grid{grid-template-columns:1fr;min-height:auto;padding:90px 0 30px}.page-product-stage{height:430px}.footer-grid{grid-template-columns:1.3fr 1fr 1fr}.footer-grid>div:last-child{grid-column:2}.package-grid{grid-template-columns:1fr}.package-grid article.featured{transform:none}}
 @media(max-width:700px){.shell{width:min(100% - 28px,var(--max))}.header-inner{height:70px}.header-cta{display:none}.brand img{width:34px;height:34px}.hero-home{padding-top:70px;min-height:auto}.hero-copy{padding-top:70px}.hero-copy h1{font-size:48px}.hero-copy>p{font-size:16px}.hero-stage{height:370px}.hero-product-main{width:390px;right:-35px}.hero-product-small{width:190px;left:-15px;bottom:30px}.stage-label{display:none}.trust-grid{grid-template-columns:1fr}.trust-grid>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.08)}.section{padding:72px 0}.section-intro{align-items:start;flex-direction:column;margin-bottom:32px}.section-intro h2,.faq-layout h2,.value-grid h2,.process-grid h2,.principles h2,.included-section h2{font-size:38px}.product-showcase{grid-template-columns:1fr;min-height:auto}.showcase-copy{padding:36px;border-right:0;border-bottom:1px solid var(--line)}.showcase-copy h3{font-size:38px}.showcase-visual{height:390px}.split-editorial{gap:48px}.metric-list>div{grid-template-columns:42px 1fr}.metric-list small{display:none}.partner-image{height:400px}.regional-grid,.product-grid,.service-grid,.branch-grid,.included-grid,.principle-grid{grid-template-columns:1fr}.faq-layout{gap:35px}.cta-band .shell{align-items:flex-start;flex-direction:column}.clean-hero>.shell{padding:72px 0 62px;margin:auto}.clean-hero h1,.product-hero h1{font-size:46px}.product-hero .page-hero-grid{padding:72px 0 20px}.page-product-stage{height:330px}.page-product-stage span{font-size:60px}.product-card{min-height:590px}.spec-details ul{columns:1}.value-list{grid-template-columns:1fr}.founder-photo{height:500px}.founder-grid h2{font-size:42px}.contact-form{padding:24px}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.footer-grid{grid-template-columns:1fr 1fr;gap:35px}.footer-grid>div:last-child{grid-column:auto}.footer-lead{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:8px}.legal-main .privacy-container{padding:35px 24px}.legal-main .privacy-container h1{font-size:38px}}
+
+
+/* 2026-08 visual refinement: stronger hierarchy and premium card definition */
+.regional-grid,.service-grid,.branch-grid,.included-grid,.principle-grid,.product-grid{
+  gap:18px;
+  border:0;
+  background:transparent;
+}
+.regional-grid article,.service-grid article,.branch-grid article,.included-grid article,.principle-grid article,.product-card{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(180deg,#fff 0%,#fbf8f2 100%);
+  border:1px solid #d8ccbb;
+  border-radius:12px;
+  box-shadow:0 14px 34px rgba(30,26,20,.07);
+  transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+}
+.regional-grid article:hover,.service-grid article:hover,.branch-grid article:hover,.included-grid article:hover,.principle-grid article:hover,.product-card:hover{
+  transform:translateY(-4px);
+  border-color:#c5a36f;
+  box-shadow:0 22px 46px rgba(30,26,20,.12);
+}
+.regional-grid article:before,.service-grid article:before,.branch-grid article:before,.included-grid article:before,.principle-grid article:before{
+  content:"";
+  position:absolute;
+  top:0;left:0;right:0;
+  height:3px;
+  background:linear-gradient(90deg,var(--gold2),var(--gold),transparent 78%);
+}
+.service-grid article:after{display:none}
+.regional-grid article,.branch-grid article{min-height:235px;padding:34px}
+.service-grid article{min-height:245px;padding:34px}
+.included-grid article,.principle-grid article{min-height:205px;padding:30px}
+.regional-grid h3,.branch-grid h3,.service-grid h3,.included-grid h3,.principle-grid h3{margin-top:28px}
+.regional-grid span,.service-grid article>span,.branch-grid article>span,.principle-grid article>span,.included-grid article>span{
+  display:inline-flex;
+  min-width:34px;
+  height:28px;
+  padding:0 9px;
+  align-items:center;
+  justify-content:center;
+  border:1px solid rgba(185,145,88,.45);
+  background:#f3eadc;
+  border-radius:999px;
+  color:#8a6331;
+}
+
+.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.product-card{border:1px solid #d8ccbb}
+.product-card .product-photo{border-bottom:1px solid #e2d8ca}
+
+.process-steps article{
+  border:1px solid #d8ccbb;
+  border-radius:12px;
+  background:linear-gradient(180deg,#fff,#fbf8f2);
+  box-shadow:0 12px 30px rgba(30,26,20,.06);
+  padding:22px 24px;
+  margin-bottom:14px;
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.process-steps article:hover{transform:translateX(4px);border-color:#c5a36f;box-shadow:0 18px 38px rgba(30,26,20,.1)}
+.process-steps span{display:flex;align-items:flex-start;font-weight:900}
+
+.value-list{gap:14px;background:transparent;border:0}
+.value-list p{
+  border:1px solid rgba(212,178,125,.5);
+  border-radius:10px;
+  box-shadow:0 10px 24px rgba(0,0,0,.08);
+  background:linear-gradient(145deg,#11110f,#1c1b18);
+}
+
+.faq-list{border-top:0;display:grid;gap:12px}
+.faq-list details{
+  border:1px solid #d8ccbb;
+  border-radius:10px;
+  padding:0 22px;
+  background:#fff;
+  box-shadow:0 10px 26px rgba(30,26,20,.06);
+  transition:border-color .25s ease,box-shadow .25s ease;
+}
+.faq-list details:hover,.faq-list details[open]{border-color:#c5a36f;box-shadow:0 16px 34px rgba(30,26,20,.1)}
+.faq-list summary{padding:21px 40px 21px 0}
+.faq-list summary:after{right:0;top:15px;color:var(--gold2)}
+.faq-list details p{padding-bottom:20px;margin-bottom:0}
+
+.cta-band.light .shell{
+  border:1px solid rgba(185,145,88,.42);
+  border-radius:12px;
+  padding:30px 34px;
+  background:linear-gradient(120deg,#eee7dc,#e2d8c8);
+  box-shadow:0 14px 34px rgba(30,26,20,.08);
+}
+
+@media(max-width:700px){
+  .regional-grid,.service-grid,.branch-grid,.included-grid,.principle-grid,.product-grid{gap:12px}
+  .regional-grid article,.branch-grid article,.service-grid article,.included-grid article,.principle-grid article{min-height:auto;padding:26px}
+  .cta-band.light .shell{padding:24px}
+}

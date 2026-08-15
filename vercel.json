@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/service.html",
+      "destination": "/leistungen.html",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
