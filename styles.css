@@ -113,3 +113,15 @@
   .regional-grid article,.branch-grid article,.service-grid article,.included-grid article,.principle-grid article{min-height:auto;padding:26px}
   .cta-band.light .shell{padding:24px}
 }
+
+
+/* Product options: klare Trennung zwischen Serien-/Schnittstellendaten und optionalen Zusatzleistungen */
+.product-option-note{margin:-26px 0 34px;padding:14px 16px;border:1px solid #dfd2bf;border-left:3px solid var(--gold2);background:#fbf8f3;color:var(--muted);font-size:12px;line-height:1.6}.product-option-note strong{color:var(--ink)}
+.spec-details{margin-top:18px;border-top:1px solid var(--line)}
+.spec-details summary{padding:14px 0}
+.spec-group{padding:3px 0 10px}.spec-group+.spec-group{margin-top:9px;padding-top:14px;border-top:1px dashed #d8ccbb}
+.spec-group h4{margin:0 0 8px;font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:#70695f}
+.spec-group-optional h4{color:var(--gold2)}
+.spec-details .spec-group ul{columns:2;column-gap:24px;margin:0;padding:0;list-style:none}
+.option-cost-note{margin:10px 0 2px;padding:9px 11px;background:#f4eee5;border:1px solid #e1d3c0;color:#6b6257!important;font-size:10px!important;line-height:1.5}
+@media(max-width:700px){.product-option-note{margin:-16px 0 28px}.spec-details .spec-group ul{columns:1}}
